@@ -1,0 +1,38 @@
+# This is the file humans edit. Add/update universities here, then run:
+#   uni-index normalize data/universities.source.yaml
+#
+# Fields:
+#   domain      required. The canonical domain — also the dedupe key. e.g. mit.edu
+#   country     required. 2-letter code, e.g. US, GB, IN, CA
+#   type        one of: public | private | community | research | other  (default: other)
+#   priority    1 (crawl first) .. 5 (crawl last)  (default: 3)
+#   subdomains  list of subdomains under this university's domain (optional)
+
+universities:
+  - domain: mit.edu
+    country: US
+    type: private
+    priority: 1
+    subdomains:
+      - admissions.mit.edu
+      - catalog.mit.edu
+
+  - domain: ox.ac.uk
+    country: GB
+    type: public
+    priority: 1
+    subdomains:
+      - admissions.ox.ac.uk
+
+  - domain: utoronto.ca
+    country: CA
+    type: public
+    priority: 2
+    subdomains: []
+
+  - domain: iitb.ac.in
+    country: IN
+    type: public
+    priority: 1
+    subdomains:
+      - admissions.iitb.ac.in

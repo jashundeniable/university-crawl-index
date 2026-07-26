@@ -1,0 +1,41 @@
+[
+  {
+    "country": "IN",
+    "domain": "iitb.ac.in",
+    "priority": 1,
+    "source_hash": "d0d0fd6e14e2d238",
+    "subdomains": [
+      "admissions.iitb.ac.in"
+    ],
+    "type": "public"
+  },
+  {
+    "country": "US",
+    "domain": "mit.edu",
+    "priority": 1,
+    "source_hash": "27ba4e131dbbbb0b",
+    "subdomains": [
+      "admissions.mit.edu",
+      "catalog.mit.edu"
+    ],
+    "type": "private"
+  },
+  {
+    "country": "GB",
+    "domain": "ox.ac.uk",
+    "priority": 1,
+    "source_hash": "ebf7fd7211760865",
+    "subdomains": [
+      "admissions.ox.ac.uk"
+    ],
+    "type": "public"
+  },
+  {
+    "country": "CA",
+    "domain": "utoronto.ca",
+    "priority": 2,
+    "source_hash": "f18688588ae85f94",
+    "subdomains": [],
+    "type": "public"
+  }
+]

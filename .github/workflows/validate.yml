@@ -1,0 +1,34 @@
+name: Validate index
+
+on:
+  push:
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Install package
+        run: pip install -e .
+
+      - name: Run tests
+        run: python -m unittest discover -s tests -v
+
+      - name: Regenerate canonical file from source
+        run: uni-index normalize data/universities.source.yaml --out dist/universities.canonical.json
+
+      - name: Fail if canonical file is out of date
+        run: |
+          git diff --exit-code -- dist/universities.canonical.json || (
+            echo "::error::dist/universities.canonical.json is out of date." \
+                 "Run 'uni-index normalize data/universities.source.yaml' locally and commit the result." \
+            && exit 1
+          )
