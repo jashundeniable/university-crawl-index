@@ -1,4 +1,11 @@
-from uni_index.import_hipo import convert_entry
+import sys
+from pathlib import Path
+
+project_root = Path(__file__).resolve().parents[1]
+sys.path.insert(0, str(project_root / "src"))
+sys.path.insert(1, str(project_root))
+
+from uni_index.import_hipo import convert_entry  # pyright: ignore[reportMissingImports]
 
 
 def test_happy_path():
