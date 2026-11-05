@@ -1,0 +1,1066 @@
+Script started on Fri Oct 23 11:43:52 2026
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 tests % [K[?2004hlls[?2004l
+__pycache__		test_dedupe.py		test_layers.py
+session_log.txt		test_import_hipo.py	test_normalize.py
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 tests % [K[?2004hccd . . .[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venv/bin/uni-index import-hp io [o  po world- _universities.json[?2004l
+Traceback (most recent call last):
+  File "/Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/bin/uni-index", line 3, in <module>
+    from uni_index.cli import cli
+ModuleNotFoundError: No module named 'uni_index'
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venv/bin/python -m pip install -e .[?2004l
+Obtaining file:///Users/jash/Desktop/CDs/Applierer/university-crawl-index
+  Installing build dependencies ... [?25l- \ done
+[?25h  Checking if build backend supports build_editable ... [?25ldone
+[?25h  Getting requirements to build editable ... [?25l- done
+[?25h  Preparing editable metadata (pyproject.toml) ... [?25l- done
+[?25hRequirement already satisfied: click>=8.1 in ./.venv/lib/python3.12/site-packages (from uni-index==0.1.0) (8.5.0)
+Requirement already satisfied: PyYAML>=6.0 in ./.venv/lib/python3.12/site-packages (from uni-index==0.1.0) (6.0.3)
+Building wheels for collected packages: uni-index
+  Building editable for uni-index (pyproject.toml) ... [?25l- done
+[?25h  Created wheel for uni-index: filename=uni_index-0.1.0-0.editable-py3-none-any.whl size=1593 sha256=ccf13fe7f110a74a6f36e7d393ed551fab9724ecd4e01e68fd04f38522f68d71
+  Stored in directory: /private/var/folders/89/07krgt095gnc14blgyc7h1rm0000gn/T/pip-ephem-wheel-cache-ic7eifpt/wheels/41/0b/e8/37d70d17220d0b0ff4adcc10731a83950dced818a26719fdbd
+Successfully built uni-index
+Installing collected packages: uni-index
+  Attempting uninstall: uni-index
+    Found existing installation: uni-index 0.1.0
+    Uninstalling uni-index-0.1.0:
+      Successfully uninstalled uni-index-0.1.0
+Successfully installed uni-index-0.1.0
+
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m A new release of pip is available: [0m[31;49m26.2.1[0m[39;49m -> [0m[32;49m26.2.2[0m
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m To update, run: [0m[32;49m/Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/bin/python -m pip install --upgrade pip[0m
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venv/bin/python       uni-index imo port-hipo o world_universities.json[?2004l
+Traceback (most recent call last):
+  File "/Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/bin/uni-index", line 3, in <module>
+    from uni_index.cli import cli
+ModuleNotFoundError: No module named 'uni_index'
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h.venv/bin/uni-index import-hipo world_universities.jsonP.venv/bin/uni-index import-hipo world_universities.json[55DPY.venv/bin/uni-index import-hipo world_universities.json[55DT.venv/bin/uni-index import-hipo world_universities.json[55DH.venv/bin/uni-index import-hipo world_universities.json[55DO.venv/bin/uni-index import-hipo world_universities.json[55DN.venv/bin/uni-index import-hipo world_universities.json[55D=.venv/bin/uni-index import-hipo world_universities.json[55Ds.venv/bin/uni-index import-hipo world_universities.json[55Dr.venv/bin/uni-index import-hipo world_universities.json[55Dc.venv/bin/uni-index import-hipo world_universities.json[55D .venv/bin/uni-index import-hipo world_universities.json[55D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1CP=src .venv/bin/uni-index import-hipo world_universities.json[60DA=src .venv/bin/uni-index import-hipo world_universities.json[60DT=src .venv/bin/uni-index import-hipo world_universities.json[60DH=src .venv/bin/uni-index import-hipo world_universities.json[60D[1C[1C[1C[1C[1C[1C[?2004l
+[32mImported 10255 of 10257 entries into 200 country files in data/sources/imported[0m
+[33mSkipped 0 invalid and 2 duplicate entries - see data/reports/hipo_import.yaml[0m
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hlls data sourcesource /source[1C[1C[1C[1C[1Cse/ee e e ce[1Cs/imported/  wc -l\wc -lwc -l |wc -l wc -l[5C && head data/soi urcews  e s/imported/in.yaml[?2004l
+     200
+# GENERATED by `uni-index import-hipo` from world_universities.json (sha256 a793a91c53e5d413a53d4369e7a5c7e771ee7ee6e21e8bc0b87974012d1f736e).
+# Do not edit by hand - re-running the importer overwrites this file.
+# To change an entry, override it in data/sources/curated/ instead.
+universities:
+- domain: aaidu.org
+  country: IN
+  type: other
+  priority: 3
+  subdomains: []
+- domain: aau.ac.in
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hccode data/source      repot rts/hipo_import.yaml[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hccsc cd "4 $(git - rev-parse --show-toplevel)"[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hggit bas   status --short[?2004l
+ [31mM[m .github/workflows/validate.yml
+ [31mM[m README.md
+ [31mD[m data/sources/hipo_import.yaml
+[32mD[m  data/universities.source.yaml
+ [31mM[m pyproject.toml
+ [31mM[m src/uni_index/cli.py
+ [31mM[m src/uni_index/import_hipo.py
+ [31mM[m src/uni_index/io_utils.py
+ [31mM[m src/uni_index/normalize.py
+[31m??[m .Rhistory
+[31m??[m data/reports/
+[31m??[m data/sources/curated/
+[31m??[m data/sources/imported/
+[31m??[m fetcher.py
+[31m??[m src/uni_index/.refact/
+[31m??[m tests/session_log.txt
+[31m??[m tests/test_layers.py
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hlls data/spu  ources/imported                     l  f ggit branch --show--current[?2004l
+error: unknown option `show--current'
+usage: git branch [<options>] [-r | -a] [--merged] [--no-merged]
+   or: git branch [<options>] [-f] [--recurse-submodules] <branch-name> [<start-point>]
+   or: git branch [<options>] [-l] [<pattern>...]
+   or: git branch [<options>] [-r] (-d | -D) <branch-name>...
+   or: git branch [<options>] (-m | -M) [<old-branch>] <new-branch>
+   or: git branch [<options>] (-c | -C) [<old-branch>] <new-branch>
+   or: git branch [<options>] [-r | -a] [--points-at]
+   or: git branch [<options>] [-r | -a] [--format]
+
+Generic options
+    -v, --[no-]verbose    show hash and subject, give twice for upstream branch
+    -q, --[no-]quiet      suppress informational messages
+    -t, --[no-]track[=(direct|inherit)]
+                          set branch tracking configuration
+    -u, --[no-]set-upstream-to <upstream>
+                          change the upstream info
+    --[no-]unset-upstream unset the upstream info
+    --[no-]color[=<when>] use colored output
+    -r, --remotes         act on remote-tracking branches
+    --contains <commit>   print only branches that contain the commit
+    --no-contains <commit>
+                          print only branches that don't contain the commit
+    --[no-]abbrev[=<n>]   use <n> digits to display object names
+
+Specific git-branch actions:
+    -a, --all             list both remote-tracking and local branches
+    -d, --[no-]delete     delete fully merged branch
+    -D                    delete branch (even if not merged)
+    -m, --[no-]move       move/rename a branch and its reflog
+    -M                    move/rename a branch, even if target exists
+    --[no-]omit-empty     do not output a newline after empty formatted refs
+    -c, --[no-]copy       copy a branch and its reflog
+    -C                    copy a branch, even if target exists
+    -l, --[no-]list       list branch names
+    --[no-]show-current   show current branch name
+    --[no-]create-reflog  create the branch's reflog
+    --[no-]edit-description
+                          edit the description for the branch
+    -f, --[no-]force      force creation, move/rename, deletion
+    --merged <commit>     print only branches that are merged
+    --no-merged <commit>  print only branches that are not merged
+    --[no-]column[=<style>]
+                          list branches in columns
+    --[no-]sort <key>     field name to sort on
+    --[no-]points-at <object>
+                          print only branches of the object
+    -i, --[no-]ignore-case
+                          sorting and filtering are case insensitive
+    --[no-]recurse-submodules
+                          recurse through submodules
+    --[no-]format <format>
+                          format to use for the output
+
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hgit branch --show--current        current[?2004l
+cp3-country-split
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hlls data . /cources       sourve  ces/imported / | wc -l[?2004l
+     200
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hhhea d -3 data/rpoet    eports/hipo_import.yaml[?2004l
+# GENERATED by `uni-index import-hipo` - what the importer skipped, and why.
+{
+  "source": "world_universities.json",
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7mcd "$(git rev-parse --show-toplevel)"[27m
+[7mgit status --short[27m[K
+[7mgit branch --show-current[27m[K
+[7mls data/sources/imported | wc -l[27m[K
+[7mhead -3 data/reports/hipo_import.yaml[27m[K[4A[14C[27mc[27md[27m [27m"[27m$[27m([27mg[27mi[27mt[27m [27mr[27me[27mv[27m-[27mp[27ma[27mr[27ms[27me[27m [27m-[27m-[27ms[27mh[27mo[27mw[27m-[27mt[27mo[27mp[27ml[27me[27mv[27me[27ml[27m)[27m"[1B[27mg[27mi[27mt[27m [27ms[27mt[27ma[27mt[27mu[27ms[27m [27m-[27m-[27ms[27mh[27mo[27mr[27mt[1B[27mg[27mi[27mt[27m [27mb[27mr[27ma[27mn[27mc[27mh[27m [27m-[27m-[27ms[27mh[27mo[27mw[27m-[27mc[27mu[27mr[27mr[27me[27mn[27mt[1B[27ml[27ms[27m [27md[27ma[27mt[27ma[27m/[27ms[27mo[27mu[27mr[27mc[27me[27ms[27m/[27mi[27mm[27mp[27mo[27mr[27mt[27me[27md[27m [27m|[27m [27mw[27mc[27m [27m-[27ml[1B[27mh[27me[27ma[27md[27m [27m-[27m3[27m [27md[27ma[27mt[27ma[27m/[27mr[27me[27mp[27mo[27mr[27mt[27ms[27m/[27mh[27mi[27mp[27mo[27m_[27mi[27mm[27mp[27mo[27mr[27mt[27m.[27my[27ma[27mm[27ml[?2004l
+ [31mM[m .github/workflows/validate.yml
+ [31mM[m README.md
+ [31mD[m data/sources/hipo_import.yaml
+[32mD[m  data/universities.source.yaml
+ [31mM[m pyproject.toml
+ [31mM[m src/uni_index/cli.py
+ [31mM[m src/uni_index/import_hipo.py
+ [31mM[m src/uni_index/io_utils.py
+ [31mM[m src/uni_index/normalize.py
+[31m??[m .Rhistory
+[31m??[m data/reports/
+[31m??[m data/sources/curated/
+[31m??[m data/sources/imported/
+[31m??[m fetcher.py
+[31m??[m src/uni_index/.refact/
+[31m??[m tests/session_log.txt
+[31m??[m tests/test_layers.py
+cp3-country-split
+     200
+# GENERATED by `uni-index import-hipo` - what the importer skipped, and why.
+{
+  "source": "world_universities.json",
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h..vencv  v/bin/uni-index normalise  se  ze[?2004l
+Traceback (most recent call last):
+  File "/Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/bin/uni-index", line 3, in <module>
+    from uni_index.cli import cli
+ModuleNotFoundError: No module named 'uni_index'
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hPPYTHONPATH=src .venc v/bin/uni-indexn  normalize[?2004l
+[32mWrote 10256 canonical record(s) to dist/universities.canonical.json[0m
+  later layers: 3 override(s), 1 new entr(ies)
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venc v/bin/python -c "import jaon   son"  ; print([r for rn  in jason.load         son.load(open('dist/universities. [Kccanonical.[A[41CPYTHONPATH=src .venv/bin/uni-index normalize[K[1B[K[A[95C[44D[15P[10Cpython -c "import json; print([r for r in json.load(open('dist/universities.canonical.[Kjson')) if r [ ['domain'] = =='mit.edu/ '])' "[A[32CPYTHONPATH=src .venv/bin/uni-index normalize[K[1B[K[A[95C[44D[15P[10Cpython -c "import json; print([r for r in json.load(open('dist/universities.canonical.json')) if r['domain']=='mit.edu'])"[K[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C])" ])" ])" ])" [1C[1C[1C                       [A[33CPYTHONPATH=src .venv/bin/uni-index normalize[K[1B[K[A[95C[44D[15P[10Cpython -c "import json; print([r for r in json.load(open('dist/universities.canonical.json'))[K[1C  [A[36CPYTHONPATH=src .venv/bin/uni-index normalize[K[1B[K[A[95C[44D[15P[10Cpython -c "import json; print([r for r in json.load(open('dist/universities.canonical.json'[K              c [K[A[136C[K[1B[K[A[136C                                    ;2D                                          .  PYTHONPATH=src .venv/bin/uni-index normalize c [?2004l[1B[32mWrote 10256 canonical record(s) to dist/universities.canonical.json[0m
+  later layers: 3 override(s), 1 new entr(ies)
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venv/bin/python -c"im    "import json  ; print([r for r in json.load(open('dist/universities. [Kccanc onical.jsn on')) if r['domain'] =='mit.edu'])"[?2004l
+[{'country': 'US', 'domain': 'mit.edu', 'priority': 1, 'source_hash': '27ba4e131dbbbb0b', 'subdomains': ['admissions.mit.edu', 'catalog.mit.edu'], 'type': 'private'}]
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h.venv/bin/python -c "import json; print([r for r in json.load(open('dist/universities.canonical.json')) if r['domain']=='mit.edu'])"[K[A[5C[K[1B[K[A[51C.venv/bin/python -c "import json; print([r for r in json.load(open('dist/universities.canonical.json')) if r['domain']=='mit.edu'])"[K[A[5C[K[1B[K[A[51C[?2004l[1B[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venv/bin. /uni-index syb nc-db[?2004l
+Traceback (most recent call last):
+  File "/Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/bin/uni-index", line 3, in <module>
+    from uni_index.cli import cli
+ModuleNotFoundError: No module named 'uni_index'
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hppython    p  OOPO  PPYTHONPATH=src .venv/bin/uni-index sync-db[?2004l
+[32mSynced: 10252 inserted, 0 updated, 4 unchanged[0m
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7m.venv/bin/uni-index status[27m[26D[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mu[27mn[27mi[27m-[27mi[27mn[27md[27me[27mx[27m [27ms[27mt[27ma[27mt[27mu[27ms[?2004l
+Traceback (most recent call last):
+  File "/Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/bin/uni-index", line 3, in <module>
+    from uni_index.cli import cli
+ModuleNotFoundError: No module named 'uni_index'
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h.venv/bin/uni-index status[26DPYTHONPATH=src .venv/bin/uni-index sync-db          dex status[?2004l
+Crawl status summary:
+  pending      10256
+  TOTAL        10256
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venv/bin/pythoh n -c "import n ni  uni-index ; print(uni_index._file_)"[?2004l
+  File "<string>", line 1
+    import uni-index; print(uni_index._file_)
+              ^
+SyntaxError: invalid syntax
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7m.venv/bin/python -c "import uni_index; print(uni_index.__file__)"[27m[65D[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27mu[27mn[27mi[27m_[27mi[27mn[27md[27me[27mx[27m;[27m [27mp[27mr[27mi[27mn[27mt[27m([27mu[27mn[27mi[27m_[27mi[27mn[27md[27me[27mx[27m.[27m_[27m_[27mf[27mi[27ml[27me[27m_[27m_[27m)[27m"[?2004l
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'uni_index'
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hccec cd "$(git rev-parse --show-toplevel)"[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hrrm -rf .venv[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h//Library/Frameworks/Python.frameo work/Versions/3.12/bin/o python3 -m venc v .venv[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venv/pip/ python -m pip install -e Y U pip[1C[P[29C [30D[P[29C [30D[P[29C [30Db/python -m pip install -U pip[29Di/python -m pip install -U pip[29Dn/python -m pip install -U pip[29D[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[1C[?2004l
+Requirement already satisfied: pip in ./.venv/lib/python3.12/site-packages (24.0)
+Collecting pip
+  Downloading pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+Downloading pip-26.2.2-py3-none-any.whl (1.8 MB)
+[?25l   [38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.8 MB[0m [31m?[0m eta [36m-:--:--[0m[2K   [38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.8 MB[0m [31m55.1 MB/s[0m eta [36m0:00:01[0m[2K   [38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.8 MB[0m [31m565.5 kB/s[0m eta [36m0:00:04[0m[2K   [38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.8 MB[0m [31m565.5 kB/s[0m eta [36m0:00:04[0m[2K   [38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.8 MB[0m [31m565.5 kB/s[0m eta [36m0:00:04[0m[2K   [38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.8 MB[0m [31m565.5 kB/s[0m eta [36m0:00:04[0m[2K   [38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.8 MB[0m [31m565.5 kB/s[0m eta [36m0:00:04[0m[2K   [38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.8 MB[0m [31m565.5 kB/s[0m eta [36m0:00:04[0m[2K   [38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.8 MB[0m [31m565.5 kB/s[0m eta [36m0:00:04[0m[2K   [38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.8 MB[0m [31m565.5 kB/s[0m eta [36m0:00:04[0m[2K   [38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.8 MB[0m [31m565.5 kB/s[0m eta [36m0:00:04[0m[2K   [38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.0/1.8 MB[0m [31m565.5 kB/s[0m eta [36m0:00:04[0m[2K   [38;2;249;38;114m━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.1/1.8 MB[0m [31m246.8 kB/s[0m eta [36m0:00:07[0m[2K   [38;2;249;38;114m━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.2/1.8 MB[0m [31m292.3 kB/s[0m eta [36m0:00:06[0m[2K   [38;2;249;38;114m━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.2/1.8 MB[0m [31m292.3 kB/s[0m eta [36m0:00:06[0m[2K   [38;2;249;38;114m━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.3/1.8 MB[0m [31m472.6 kB/s[0m eta [36m0:00:04[0m[2K   [38;2;249;38;114m━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.3/1.8 MB[0m [31m472.6 kB/s[0m eta [36m0:00:04[0m[2K   [38;2;249;38;114m━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.3/1.8 MB[0m [31m472.6 kB/s[0m eta [36m0:00:04[0m[2K   [38;2;249;38;114m━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.3/1.8 MB[0m [31m430.5 kB/s[0m eta [36m0:00:04[0m[2K   [38;2;249;38;114m━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.5/1.8 MB[0m [31m726.0 kB/s[0m eta [36m0:00:02[0m[2K   [38;2;249;38;114m━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.5/1.8 MB[0m [31m726.0 kB/s[0m eta [36m0:00:02[0m[2K   [38;2;249;38;114m━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.5/1.8 MB[0m [31m726.0 kB/s[0m eta [36m0:00:02[0m[2K   [38;2;249;38;114m━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.5/1.8 MB[0m [31m726.0 kB/s[0m eta [36m0:00:02[0m[2K   [38;2;249;38;114m━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m0.5/1.8 MB[0m [31m726.0 kB/s[0m eta [36m0:00:02[0m[2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━[0m [32m1.0/1.8 MB[0m [31m1.1 MB/s[0m eta [36m0:00:01[0m[2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━[0m [32m1.2/1.8 MB[0m [31m1.3 MB/s[0m eta [36m0:00:01[0m[2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━[0m [32m1.5/1.8 MB[0m [31m1.5 MB/s[0m eta [36m0:00:01[0m[2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━[0m [32m1.7/1.8 MB[0m [31m1.7 MB/s[0m eta [36m0:00:01[0m[2K   [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1.8/1.8 MB[0m [31m1.7 MB/s[0m eta [36m0:00:00[0m
+[?25hInstalling collected packages: pip
+  Attempting uninstall: pip
+    Found existing installation: pip 24.0
+    Uninstalling pip-24.0:
+      Successfully uninstalled pip-24.0
+Successfully installed pip-26.2.2
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venv/bin/python -m pip install -e ".[dev]."[?2004l
+[31mERROR: .[dev]. is not a valid editable requirement. It should either be a path to a local project or a VCS URL (beginning with bzr+http, bzr+https, bzr+ssh, bzr+sftp, bzr+ftp, bzr+lp, bzr+file, git+http, git+https, git+ssh, git+git, git+file, hg+file, hg+http, hg+https, hg+ssh, hg+static-http, svn+ssh, svn+http, svn+https, svn+svn, svn+file).[0m[31m
+[0m[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7m.venv/bin/python -m pip install -e ".[dev]"[27m[43D[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mm[27m [27mp[27mi[27mp[27m [27mi[27mn[27ms[27mt[27ma[27ml[27ml[27m [27m-[27me[27m [27m"[27m.[27m[[27md[27me[27mv[27m][27m"[?2004l
+Obtaining file:///Users/jash/Desktop/CDs/Applierer/university-crawl-index
+  Installing build dependencies ... [?25l- \ done
+[?25h  Checking if build backend supports build_editable ... [?25ldone
+[?25h  Getting requirements to build editable ... [?25l- done
+[?25h  Preparing editable metadata (pyproject.toml) ... [?25l- done
+[?25hCollecting click>=8.1 (from uni-index==0.1.0)
+  Using cached click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting PyYAML>=6.0 (from uni-index==0.1.0)
+  Using cached pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl.metadata (2.4 kB)
+Collecting pytest>=8 (from uni-index==0.1.0)
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting iniconfig>=1.0.1 (from pytest>=8->uni-index==0.1.0)
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Collecting packaging>=22 (from pytest>=8->uni-index==0.1.0)
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Collecting pluggy<2,>=1.5 (from pytest>=8->uni-index==0.1.0)
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest>=8->uni-index==0.1.0)
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Using cached click-8.5.0-py3-none-any.whl (125 kB)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Using cached pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl (173 kB)
+Building wheels for collected packages: uni-index
+  Building editable for uni-index (pyproject.toml) ... [?25l- done
+[?25h  Created wheel for uni-index: filename=uni_index-0.1.0-0.editable-py3-none-any.whl size=1593 sha256=a4459cf6d45202157d08ce5033edd7478bac62fad9fd04abb73ad24420e8a44e
+  Stored in directory: /private/var/folders/89/07krgt095gnc14blgyc7h1rm0000gn/T/pip-ephem-wheel-cache-lxxna87a/wheels/41/0b/e8/37d70d17220d0b0ff4adcc10731a83950dced818a26719fdbd
+Successfully built uni-index
+Installing collected packages: PyYAML, pygments, pluggy, packaging, iniconfig, click, uni-index, pytest
+[?25l[2K   [38;2;249;38;114m━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1/8[0m [pygments][2K   [38;2;249;38;114m━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1/8[0m [pygments][2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━[0m [32m7/8[0m [pytest][2K   [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m8/8[0m [pytest]
+[?25h[1A[2KSuccessfully installed PyYAML-6.0.3 click-8.5.0 iniconfig-2.3.1 packaging-26.3 pluggy-1.7.0 pygments-2.21.0 pytest-9.1.1 uni-index-0.1.0
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7m.venv/bin/uni-index --help[27m
+[K[A[51C[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mu[27mn[27mi[27m-[27mi[27mn[27md[27me[27mx[27m [27m-[27m-[27mh[27me[27ml[27mp[1B[K[?2004l
+Traceback (most recent call last):
+  File "/Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/bin/uni-index", line 3, in <module>
+    from uni_index.cli import cli
+ModuleNotFoundError: No module named 'uni_index'
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hcconda deactivia  ate[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004hwwhich python[?2004l
+python not found
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004hrrm -rff  .venv[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h//Library/framw     Frameworks/Python.frameowkr    work/Versions/3.12/bin. /python3 -m venv .venv[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venv/bin/pyton  hon -m in  pip instra  all -U pipi  setuptools wheel[?2004l
+Requirement already satisfied: pip in ./.venv/lib/python3.12/site-packages (24.0)
+Collecting pip
+  Using cached pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+Collecting setuptools
+  Using cached setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+Collecting wheel
+  Using cached wheel-0.48.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting packaging>=24.0 (from wheel)
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Using cached pip-26.2.2-py3-none-any.whl (1.8 MB)
+Using cached setuptools-84.2.1-py3-none-any.whl (876 kB)
+Using cached wheel-0.48.0-py3-none-any.whl (33 kB)
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Installing collected packages: setuptools, pip, packaging, wheel
+  Attempting uninstall: pip
+    Found existing installation: pip 24.0
+    Uninstalling pip-24.0:
+      Successfully uninstalled pip-24.0
+Successfully installed packaging-26.3 pip-26.2.2 setuptools-84.2.1 wheel-0.48.0
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venv/bin/pytoh  hon -m ip   pip install -e "[dev    .[dev]"[?2004l
+Obtaining file:///Users/jash/Desktop/CDs/Applierer/university-crawl-index
+  Installing build dependencies ... [?25l- done
+[?25h  Checking if build backend supports build_editable ... [?25ldone
+[?25h  Getting requirements to build editable ... [?25l- done
+[?25h  Preparing editable metadata (pyproject.toml) ... [?25l- done
+[?25hCollecting click>=8.1 (from uni-index==0.1.0)
+  Using cached click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting PyYAML>=6.0 (from uni-index==0.1.0)
+  Using cached pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl.metadata (2.4 kB)
+Collecting pytest>=8 (from uni-index==0.1.0)
+  Using cached pytest-9.1.1-py3-none-any.whl.metadata (7.6 kB)
+Collecting iniconfig>=1.0.1 (from pytest>=8->uni-index==0.1.0)
+  Using cached iniconfig-2.3.1-py3-none-any.whl.metadata (2.8 kB)
+Requirement already satisfied: packaging>=22 in ./.venv/lib/python3.12/site-packages (from pytest>=8->uni-index==0.1.0) (26.3)
+Collecting pluggy<2,>=1.5 (from pytest>=8->uni-index==0.1.0)
+  Using cached pluggy-1.7.0-py3-none-any.whl.metadata (5.0 kB)
+Collecting pygments>=2.7.2 (from pytest>=8->uni-index==0.1.0)
+  Using cached pygments-2.21.0-py3-none-any.whl.metadata (2.5 kB)
+Using cached click-8.5.0-py3-none-any.whl (125 kB)
+Using cached pytest-9.1.1-py3-none-any.whl (386 kB)
+Using cached pluggy-1.7.0-py3-none-any.whl (27 kB)
+Using cached iniconfig-2.3.1-py3-none-any.whl (7.6 kB)
+Using cached pygments-2.21.0-py3-none-any.whl (1.3 MB)
+Using cached pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl (173 kB)
+Building wheels for collected packages: uni-index
+  Building editable for uni-index (pyproject.toml) ... [?25l- done
+[?25h  Created wheel for uni-index: filename=uni_index-0.1.0-0.editable-py3-none-any.whl size=1593 sha256=3f76ed7a1f5c62ea887cf09a5717582f24e468c616ae8172af288f28d159fb68
+  Stored in directory: /private/var/folders/89/07krgt095gnc14blgyc7h1rm0000gn/T/pip-ephem-wheel-cache-r0p3bfl6/wheels/41/0b/e8/37d70d17220d0b0ff4adcc10731a83950dced818a26719fdbd
+Successfully built uni-index
+Installing collected packages: PyYAML, pygments, pluggy, iniconfig, click, uni-index, pytest
+[?25l[2K   [38;2;249;38;114m━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1/7[0m [pygments][2K   [38;2;249;38;114m━━━━━[0m[38;2;249;38;114m╸[0m[38;5;237m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m1/7[0m [pygments][2K   [38;2;249;38;114m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m[38;5;237m╺[0m[38;5;237m━━━━━[0m [32m6/7[0m [pytest][2K   [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m7/7[0m [pytest]
+[?25h[1A[2KSuccessfully installed PyYAML-6.0.3 click-8.5.0 iniconfig-2.3.1 pluggy-1.7.0 pygments-2.21.0 pytest-9.1.1 uni-index-0.1.0
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venv/bin/python -c "import uni_index; print(ni  uni_index._file_. )"[?2004l
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'uni_index'
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venv/bin/python -m pip show -f uni-index[?2004l
+Name: uni-index
+Version: 0.1.0
+Summary: Canonical, versioned index of target university crawl targets
+Home-page: 
+Author: 
+Author-email: 
+License: 
+Location: /Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/lib/python3.12/site-packages
+Editable project location: /Users/jash/Desktop/CDs/Applierer/university-crawl-index
+Requires: click, PyYAML
+Required-by: 
+Files:
+  ../../../bin/uni-index
+  __editable__.uni_index-0.1.0.pth
+  uni_index-0.1.0.dist-info/INSTALLER
+  uni_index-0.1.0.dist-info/METADATA
+  uni_index-0.1.0.dist-info/RECORD
+  uni_index-0.1.0.dist-info/REQUESTED
+  uni_index-0.1.0.dist-info/WHEEL
+  uni_index-0.1.0.dist-info/direct_url.json
+  uni_index-0.1.0.dist-info/entry_points.txt
+  uni_index-0.1.0.dist-info/top_level.txt
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004hlls -la src/[?2004l
+total 24
+drwxr-xr-x@  6 jash  staff    192 Oct 23 15:56 .
+drwxr-xr-x@ 18 jash  staff    576 Oct 27 13:55 ..
+-rw-r--r--@  1 jash  staff  10244 Oct 20 15:25 .DS_Store
+drwxr-xr-x  12 jash  staff    384 Sep 25 19:06 .refact
+drwxr-xr-x@ 12 jash  staff    384 Oct 23 15:56 uni_index
+drwxr-xr-x@  8 jash  staff    256 Oct 27 13:45 uni_index.egg-info
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004hs lls -la src /unin -ond  in   index      _index/ 2x >/dev/null || echo "src/uni_inex  dex/ does not exist"[?2004l
+total 112
+-rw-r--r--@  1 jash  staff   103 Jul 23 15:54 __init__.py
+drwxr-xr-x  16 jash  staff   512 Oct 23 15:56 __pycache__
+drwxr-xr-x@ 12 jash  staff   384 Oct 23 15:56 .
+drwxr-xr-x@  6 jash  staff   192 Oct 23 15:56 ..
+-rw-r--r--@  1 jash  staff  6148 Aug 29 15:15 .DS_Store
+drwxr-xr-x  13 jash  staff   416 Oct 21 15:47 .refact
+-rw-r--r--@  1 jash  staff  8097 Oct 15 21:08 cli.py
+-rw-r--r--@  1 jash  staff  4867 Jul 23 15:55 db.py
+-rw-r--r--@  1 jash  staff  4711 Oct 23 11:35 import_hipo.py
+-rw-r--r--@  1 jash  staff  3845 Oct 15 21:08 io_utils.py
+-rw-r--r--@  1 jash  staff  4446 Jul 23 15:55 models.py
+-rw-r--r--@  1 jash  staff  4742 Oct 15 21:08 normalize.py
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004hffind src -name "__init__.oy  py" -tyoe  pe f[?2004l
+src/uni_index/__init__.py
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venv/bin/python -c"  : "from stuptool       etuptools im[ port find_a packages print(( find_packages(where='src'))"[?2004l
+  File "<string>", line 1
+    from setuptools import find_packages print(find_packages(where='src'))
+                                         ^^^^^
+SyntaxError: invalid syntax
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004hx ccode ~// .zshc rc[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004haalias uni_index      -n index ="PYTHONPATH=src $git   (git r4ev   ev-parse --show-toplevel)./  /.venv/bin. /uni-index"[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004heexec $SH hell    HELL[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004huuniv -n index status[?2004l
+zsh: command not found: uni-index
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h..b. .venv/bin.p  /python -m show    piip show      p so how -f uni-index[?2004l
+Name: uni-index
+Version: 0.1.0
+Summary: Canonical, versioned index of target university crawl targets
+Home-page: 
+Author: 
+Author-email: 
+License: 
+Location: /Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/lib/python3.12/site-packages
+Editable project location: /Users/jash/Desktop/CDs/Applierer/university-crawl-index
+Requires: click, PyYAML
+Required-by: 
+Files:
+  ../../../bin/uni-index
+  __editable__.uni_index-0.1.0.pth
+  uni_index-0.1.0.dist-info/INSTALLER
+  uni_index-0.1.0.dist-info/METADATA
+  uni_index-0.1.0.dist-info/RECORD
+  uni_index-0.1.0.dist-info/REQUESTED
+  uni_index-0.1.0.dist-info/WHEEL
+  uni_index-0.1.0.dist-info/direct_url.json
+  uni_index-0.1.0.dist-info/entry_points.txt
+  uni_index-0.1.0.dist-info/top_level.txt
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hlls -la src[?2004l
+total 24
+drwxr-xr-x@  6 jash  staff    192 Oct 23 15:56 .
+drwxr-xr-x@ 18 jash  staff    576 Oct 28 07:41 ..
+-rw-r--r--@  1 jash  staff  10244 Oct 20 15:25 .DS_Store
+drwxr-xr-x  12 jash  staff    384 Sep 25 19:06 .refact
+drwxr-xr-x@ 12 jash  staff    384 Oct 23 15:56 uni_index
+drwxr-xr-x@  8 jash  staff    256 Oct 27 13:45 uni_index.egg-info
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hlls -la /src[?2004l
+ls: /src: No such file or directory
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hs lls -la sc rc/[?2004l
+total 24
+drwxr-xr-x@  6 jash  staff    192 Oct 23 15:56 .
+drwxr-xr-x@ 18 jash  staff    576 Oct 28 07:41 ..
+-rw-r--r--@  1 jash  staff  10244 Oct 20 15:25 .DS_Store
+drwxr-xr-x  12 jash  staff    384 Sep 25 19:06 .refact
+drwxr-xr-x@ 12 jash  staff    384 Oct 23 15:56 uni_index
+drwxr-xr-x@  8 jash  staff    256 Oct 27 13:45 uni_index.egg-info
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hlls -la src/uni-index      _index/ 2x . >/dev/null || echo "S src/uni_index/ does not exist"[?2004l
+total 112
+-rw-r--r--@  1 jash  staff   103 Jul 23 15:54 __init__.py
+drwxr-xr-x  16 jash  staff   512 Oct 23 15:56 __pycache__
+drwxr-xr-x@ 12 jash  staff   384 Oct 23 15:56 .
+drwxr-xr-x@  6 jash  staff   192 Oct 23 15:56 ..
+-rw-r--r--@  1 jash  staff  6148 Aug 29 15:15 .DS_Store
+drwxr-xr-x  13 jash  staff   416 Oct 21 15:47 .refact
+-rw-r--r--@  1 jash  staff  8097 Oct 15 21:08 cli.py
+-rw-r--r--@  1 jash  staff  4867 Jul 23 15:55 db.py
+-rw-r--r--@  1 jash  staff  4711 Oct 23 11:35 import_hipo.py
+-rw-r--r--@  1 jash  staff  3845 Oct 15 21:08 io_utils.py
+-rw-r--r--@  1 jash  staff  4446 Jul 23 15:55 models.py
+-rw-r--r--@  1 jash  staff  4742 Oct 15 21:08 normalize.py
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venv/bin/python -c"[?2004l
+[0m[27m[24m[Jdquote> [K[?2004hls -la src/uni_index/ 2>/dev/null || echo "src/uni_index/ does not exist"[73D                                                                         [73Dls -la src/uni_index/ 2>/dev/null || echo "src/uni_index/ does not exist"[73D                                                                         [73Dcclear && reset[?2004l
+[0m[27m[24m[Jdquote> [K[?2004h[?2004l
+[0m[27m[24m[Jdquote> [K[?2004hls -la src/uni_index/ 2>/dev/null || echo "src/uni_index/ does not exist"[73D                                                                         [73D..venv/bin/python "c                 .  [7m.venv/bin/python -c "[27m
+[7mfrom setuptools import find_packages[27m[K
+[7mprint(find_packages(where='src'))[27m[K
+[7m"[27m[K[3A[7C[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mc[27m [27m"[1B[27mf[27mr[27mo[27mm[27m [27ms[27me[27mt[27mu[27mp[27mt[27mo[27mo[27ml[27ms[27m [27mi[27mm[27mp[27mo[27mr[27mt[27m [27mf[27mi[27mn[27md[27m_[27mp[27ma[27mc[27mk[27ma[27mg[27me[27ms[1B[27mp[27mr[27mi[27mn[27mt[27m([27mf[27mi[27mn[27md[27m_[27mp[27ma[27mc[27mk[27ma[27mg[27me[27ms[27m([27mw[27mh[27me[27mr[27me[27m=[27m'[27ms[27mr[27mc[27m'[27m)[27m)[1B[27m"[?2004l
+[0m[27m[24m[Jdquote> [K[?2004h[7mconda deactivate 2>/dev/null[27m
+[7mwhich python[27m[K[A[27mc[27mo[27mn[27md[27ma[27m [27md[27me[27ma[27mc[27mt[27mi[27mv[27ma[27mt[27me[27m [27m2[27m>[27m/[27md[27me[27mv[27m/[27mn[27mu[27ml[27ml[1B[27mw[27mh[27mi[27mc[27mh[27m [27mp[27my[27mt[27mh[27mo[27mn[?2004l
+[0m[27m[24m[Jdquote> [K[?2004h[7m.venv/bin/python -m pip show -f uni-index[27m[41D[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mm[27m [27mp[27mi[27mp[27m [27ms[27mh[27mo[27mw[27m [27m-[27mf[27m [27mu[27mn[27mi[27m-[27mi[27mn[27md[27me[27mx[?2004l
+[0m[27m[24m[Jdquote> [K[?2004h[7mcat .venv/lib/python3.12/site-packages/__editable__.uni_index-0.1.0.pth[27m[71D[27mc[27ma[27mt[27m [27m.[27mv[27me[27mn[27mv[27m/[27ml[27mi[27mb[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m3[27m.[27m1[27m2[27m/[27ms[27mi[27mt[27me[27m-[27mp[27ma[27mc[27mk[27ma[27mg[27me[27ms[27m/[27m_[27m_[27me[27md[27mi[27mt[27ma[27mb[27ml[27me[27m_[27m_[27m.[27mu[27mn[27mi[27m_[27mi[27mn[27md[27me[27mx[27m-[27m0[27m.[27m1[27m.[27m0[27m.[27mp[27mt[27mh[?2004l
+[0m[27m[24m[Jdquote> [K[?2004h[7m.venv/bin/python -c "import uni_index; print(uni_index.__file__)"[27m[65D[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27mu[27mn[27mi[27m_[27mi[27mn[27md[27me[27mx[27m;[27m [27mp[27mr[27mi[27mn[27mt[27m([27mu[27mn[27mi[27m_[27mi[27mn[27md[27me[27mx[27m.[27m_[27m_[27mf[27mi[27ml[27me[27m_[27m_[27m)[27m"[?2004l
+[0m[27m[24m[Jdquote> [K[?2004hls -la src/uni_index/ 2>/dev/null || echo "src/uni_index/ does not exist"[73D                                                                         [73D"[?2004l
+  File "<string>", line 2
+    clear && reset
+           ^
+SyntaxError: invalid syntax
+zsh: command not found: from
+zsh: no matches found: print(find_packages(where=src))
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7mfind src -name "__init__.py" -type f[27m[36D[27mf[27mi[27mn[27md[27m [27ms[27mr[27mc[27m [27m-[27mn[27ma[27mm[27me[27m [27m"[27m_[27m_[27mi[27mn[27mi[27mt[27m_[27m_[27m.[27mp[27my[27m"[27m [27m-[27mt[27my[27mp[27me[27m [27mf[?2004l
+src/uni_index/__init__.py
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7m# 1. What did pip actually install?[27m
+[7m.venv/bin/python -m pip show -f uni-index[27m[K
+[K
+[7m# 2. Does the source package even exist?[27m[K
+[7mls -la src/[27m[K
+[7mls -la src/uni_index/ 2>/dev/null || echo "src/uni_index/ does not exist"[27m[K
+[K
+[7m# 3. Is there an __init__.py?[27m[K
+[7mfind src -name "__init__.py" -type f[27m[K
+[K
+[7m# 4. What does setuptools think the packages are?[27m[K
+[7m.venv/bin/python -c "[27m[K
+[7mfrom setuptools import find_packages[27m[K
+[7mprint(find_packages(where='src'))[27m[K
+[7m"[27m[K[14A[50C[27m#[27m [27m1[27m.[27m [27mW[27mh[27ma[27mt[27m [27md[27mi[27md[27m [27mp[27mi[27mp[27m [27ma[27mc[27mt[27mu[27ma[27ml[27ml[27my[27m [27mi[27mn[27ms[27mt[27ma[27ml[27ml[27m?[1B[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mm[27m [27mp[27mi[27mp[27m [27ms[27mh[27mo[27mw[27m [27m-[27mf[27m [27mu[27mn[27mi[27m-[27mi[27mn[27md[27me[27mx[2B[27m#[27m [27m2[27m.[27m [27mD[27mo[27me[27ms[27m [27mt[27mh[27me[27m [27ms[27mo[27mu[27mr[27mc[27me[27m [27mp[27ma[27mc[27mk[27ma[27mg[27me[27m [27me[27mv[27me[27mn[27m [27me[27mx[27mi[27ms[27mt[27m?[1B[27ml[27ms[27m [27m-[27ml[27ma[27m [27ms[27mr[27mc[27m/[1B[27ml[27ms[27m [27m-[27ml[27ma[27m [27ms[27mr[27mc[27m/[27mu[27mn[27mi[27m_[27mi[27mn[27md[27me[27mx[27m/[27m [27m2[27m>[27m/[27md[27me[27mv[27m/[27mn[27mu[27ml[27ml[27m [27m|[27m|[27m [27me[27mc[27mh[27mo[27m [27m"[27ms[27mr[27mc[27m/[27mu[27mn[27mi[27m_[27mi[27mn[27md[27me[27mx[27m/[27m [27md[27mo[27me[27ms[27m [27mn[27mo[27mt[27m [27me[27mx[27mi[27ms[27mt[27m"[2B[27m#[27m [27m3[27m.[27m [27mI[27ms[27m [27mt[27mh[27me[27mr[27me[27m [27ma[27mn[27m [27m_[27m_[27mi[27mn[27mi[27mt[27m_[27m_[27m.[27mp[27my[27m?[1B[27mf[27mi[27mn[27md[27m [27ms[27mr[27mc[27m [27m-[27mn[27ma[27mm[27me[27m [27m"[27m_[27m_[27mi[27mn[27mi[27mt[27m_[27m_[27m.[27mp[27my[27m"[27m [27m-[27mt[27my[27mp[27me[27m [27mf[2B[27m#[27m [27m4[27m.[27m [27mW[27mh[27ma[27mt[27m [27md[27mo[27me[27ms[27m [27ms[27me[27mt[27mu[27mp[27mt[27mo[27mo[27ml[27ms[27m [27mt[27mh[27mi[27mn[27mk[27m [27mt[27mh[27me[27m [27mp[27ma[27mc[27mk[27ma[27mg[27me[27ms[27m [27ma[27mr[27me[27m?[1B[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mc[27m [27m"[1B[27mf[27mr[27mo[27mm[27m [27ms[27me[27mt[27mu[27mp[27mt[27mo[27mo[27ml[27ms[27m [27mi[27mm[27mp[27mo[27mr[27mt[27m [27mf[27mi[27mn[27md[27m_[27mp[27ma[27mc[27mk[27ma[27mg[27me[27ms[1B[27mp[27mr[27mi[27mn[27mt[27m([27mf[27mi[27mn[27md[27m_[27mp[27ma[27mc[27mk[27ma[27mg[27me[27ms[27m([27mw[27mh[27me[27mr[27me[27m=[27m'[27ms[27mr[27mc[27m'[27m)[27m)[1B[27m"[?2004l
+zsh: no matches found: install?
+Name: uni-index
+Version: 0.1.0
+Summary: Canonical, versioned index of target university crawl targets
+Home-page: 
+Author: 
+Author-email: 
+License: 
+Location: /Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/lib/python3.12/site-packages
+Editable project location: /Users/jash/Desktop/CDs/Applierer/university-crawl-index
+Requires: click, PyYAML
+Required-by: 
+Files:
+  ../../../bin/uni-index
+  __editable__.uni_index-0.1.0.pth
+  uni_index-0.1.0.dist-info/INSTALLER
+  uni_index-0.1.0.dist-info/METADATA
+  uni_index-0.1.0.dist-info/RECORD
+  uni_index-0.1.0.dist-info/REQUESTED
+  uni_index-0.1.0.dist-info/WHEEL
+  uni_index-0.1.0.dist-info/direct_url.json
+  uni_index-0.1.0.dist-info/entry_points.txt
+  uni_index-0.1.0.dist-info/top_level.txt
+zsh: no matches found: exist?
+total 24
+drwxr-xr-x@  6 jash  staff    192 Oct 23 15:56 .
+drwxr-xr-x@ 18 jash  staff    576 Oct 28 08:42 ..
+-rw-r--r--@  1 jash  staff  10244 Oct 20 15:25 .DS_Store
+drwxr-xr-x  12 jash  staff    384 Sep 25 19:06 .refact
+drwxr-xr-x@ 12 jash  staff    384 Oct 23 15:56 uni_index
+drwxr-xr-x@  8 jash  staff    256 Oct 27 13:45 uni_index.egg-info
+total 112
+-rw-r--r--@  1 jash  staff   103 Jul 23 15:54 __init__.py
+drwxr-xr-x  16 jash  staff   512 Oct 23 15:56 __pycache__
+drwxr-xr-x@ 12 jash  staff   384 Oct 23 15:56 .
+drwxr-xr-x@  6 jash  staff   192 Oct 23 15:56 ..
+-rw-r--r--@  1 jash  staff  6148 Aug 29 15:15 .DS_Store
+drwxr-xr-x  13 jash  staff   416 Oct 21 15:47 .refact
+-rw-r--r--@  1 jash  staff  8097 Oct 15 21:08 cli.py
+-rw-r--r--@  1 jash  staff  4867 Jul 23 15:55 db.py
+-rw-r--r--@  1 jash  staff  4711 Oct 23 11:35 import_hipo.py
+-rw-r--r--@  1 jash  staff  3845 Oct 15 21:08 io_utils.py
+-rw-r--r--@  1 jash  staff  4446 Jul 23 15:55 models.py
+-rw-r--r--@  1 jash  staff  4742 Oct 15 21:08 normalize.py
+zsh: no matches found: __init__.py?
+src/uni_index/__init__.py
+zsh: no matches found: are?
+['uni_index']
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hccat .venv/lib/pyto hpn  on3.12/site-packages/- __editable_. _.uni_index-0.1.o 0ph th   .pth[?2004l
+/Users/jash/Desktop/CDs/Applierer/university-crawl-index/src
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venv/bin/python -c "import uni_ine dex; print(ni  uni_index.__file__.)"[?2004l
+  File "<string>", line 1
+    import uni_index; print(uni_index.__file__.)
+                                               ^
+SyntaxError: invalid syntax
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h.venv/bin/python -c "import uni_index; print(uni_index.__file__.)".)" ile_.)" [8Dile_.)" [8Dfile_.)"[7C[?2004l
+  File "<string>", line 1
+    import uni_index; print(uni_index._file_.)
+                                             ^
+SyntaxError: invalid syntax
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7m.venv/bin/python -c "import uni_index; print(uni_index.__file__)"[27m[65D[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27mu[27mn[27mi[27m_[27mi[27mn[27md[27me[27mx[27m;[27m [27mp[27mr[27mi[27mn[27mt[27m([27mu[27mn[27mi[27m_[27mi[27mn[27md[27me[27mx[27m.[27m_[27m_[27mf[27mi[27ml[27me[27m_[27m_[27m)[27m"[?2004l
+Traceback (most recent call last):
+  File "<string>", line 1, in <module>
+ModuleNotFoundError: No module named 'uni_index'
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7m# 1. Append the explicit layout alias systematically to the configuration file[27m
+[7mecho 'alias uni-index="PYTHONPATH=src \$(git rev-parse --show-toplevel)/.venv/bin/uni-index"' >> ~/.zshrc[27m[K
+[K
+[7m# 2. Hard-refresh the shell to force disk read and bypass memory variables[27m[K
+[7mexec $SHELL[27m[K
+[K[5A[51C[27m#[27m [27m1[27m.[27m [27mA[27mp[27mp[27me[27mn[27md[27m [27mt[27mh[27me[27m [27me[27mx[27mp[27ml[27mi[27mc[27mi[27mt[27m [27ml[27ma[27my[27mo[27mu[27mt[27m [27ma[27ml[27mi[27ma[27ms[27m [27ms[27my[27ms[27mt[27me[27mm[27ma[27mt[27mi[27mc[27ma[27ml[27ml[27my[27m [27mt[27mo[27m [27mt[27mh[27me[27m [27mc[27mo[27mn[27mf[27mi[27mg[27mu[27mr[27ma[27mt[27mi[27mo[27mn[27m [27mf[27mi[27ml[27me[1B[27me[27mc[27mh[27mo[27m [27m'[27ma[27ml[27mi[27ma[27ms[27m [27mu[27mn[27mi[27m-[27mi[27mn[27md[27me[27mx[27m=[27m"[27mP[27mY[27mT[27mH[27mO[27mN[27mP[27mA[27mT[27mH[27m=[27ms[27mr[27mc[27m [27m\[27m$[27m([27mg[27mi[27mt[27m [27mr[27me[27mv[27m-[27mp[27ma[27mr[27ms[27me[27m [27m-[27m-[27ms[27mh[27mo[27mw[27m-[27mt[27mo[27mp[27ml[27me[27mv[27me[27ml[27m)[27m/[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mu[27mn[27mi[27m-[27mi[27mn[27md[27me[27mx[27m"[27m'[27m [27m>[27m>[27m [27m~[27m/[27m.[27mz[27ms[27mh[27mr[27mc[2B[27m#[27m [27m2[27m.[27m [27mH[27ma[27mr[27md[27m-[27mr[27me[27mf[27mr[27me[27ms[27mh[27m [27mt[27mh[27me[27m [27ms[27mh[27me[27ml[27ml[27m [27mt[27mo[27m [27mf[27mo[27mr[27mc[27me[27m [27md[27mi[27ms[27mk[27m [27mr[27me[27ma[27md[27m [27ma[27mn[27md[27m [27mb[27my[27mp[27ma[27ms[27ms[27m [27mm[27me[27mm[27mo[27mr[27my[27m [27mv[27ma[27mr[27mi[27ma[27mb[27ml[27me[27ms[1B[27me[27mx[27me[27mc[27m [27m$[27mS[27mH[27mE[27mL[27mL[1B[K[?2004l
+zsh: command not found: #
+zsh: command not found: #
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7mecho 'alias uni-index="PYTHONPATH=src \$(git rev-parse --show-toplevel)/.venv/bin/uni-[7mi[7mndex"' >> ~/.zshrc[27m[K
+[K[A[A[51C[27me[27mc[27mh[27mo[27m [27m'[27ma[27ml[27mi[27ma[27ms[27m [27mu[27mn[27mi[27m-[27mi[27mn[27md[27me[27mx[27m=[27m"[27mP[27mY[27mT[27mH[27mO[27mN[27mP[27mA[27mT[27mH[27m=[27ms[27mr[27mc[27m [27m\[27m$[27m([27mg[27mi[27mt[27m [27mr[27me[27mv[27m-[27mp[27ma[27mr[27ms[27me[27m [27m-[27m-[27ms[27mh[27mo[27mw[27m-[27mt[27mo[27mp[27ml[27me[27mv[27me[27ml[27m)[27m/[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mu[27mn[27mi[27m-i[27mn[27md[27me[27mx[27m"[27m'[27m [27m>[27m>[27m [27m~[27m/[27m.[27mz[27ms[27mh[27mr[27mc[1B[K[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7mecho 'alias uni-index="PYTHONPATH=src \$(git rev-parse --show-toplevel)/.venv/bin/uni-[7mi[7mndex"' >> ~/.zshrc[27m[K
+[K[A[A[51C[27me[27mc[27mh[27mo[27m [27m'[27ma[27ml[27mi[27ma[27ms[27m [27mu[27mn[27mi[27m-[27mi[27mn[27md[27me[27mx[27m=[27m"[27mP[27mY[27mT[27mH[27mO[27mN[27mP[27mA[27mT[27mH[27m=[27ms[27mr[27mc[27m [27m\[27m$[27m([27mg[27mi[27mt[27m [27mr[27me[27mv[27m-[27mp[27ma[27mr[27ms[27me[27m [27m-[27m-[27ms[27mh[27mo[27mw[27m-[27mt[27mo[27mp[27ml[27me[27mv[27me[27ml[27m)[27m/[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mu[27mn[27mi[27m-i[27mn[27md[27me[27mx[27m"[27m'[27m [27m>[27m>[27m [27m~[27m/[27m.[27mz[27ms[27mh[27mr[27mc[1B[K[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7mecho 'alias uni-index="PYTHONPATH=src \$(git rev-parse --show-toplevel)/.venv/bin/uni-[7mi[7mndex"' >> ~/.zshrc[27m[K
+[K[A[A[51C[27me[27mc[27mh[27mo[27m [27m'[27ma[27ml[27mi[27ma[27ms[27m [27mu[27mn[27mi[27m-[27mi[27mn[27md[27me[27mx[27m=[27m"[27mP[27mY[27mT[27mH[27mO[27mN[27mP[27mA[27mT[27mH[27m=[27ms[27mr[27mc[27m [27m\[27m$[27m([27mg[27mi[27mt[27m [27mr[27me[27mv[27m-[27mp[27ma[27mr[27ms[27me[27m [27m-[27m-[27ms[27mh[27mo[27mw[27m-[27mt[27mo[27mp[27ml[27me[27mv[27me[27ml[27m)[27m/[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mu[27mn[27mi[27m-i[27mn[27md[27me[27mx[27m"[27m'[27m [27m>[27m>[27m [27m~[27m/[27m.[27mz[27ms[27mh[27mr[27mc[1B[K[A[19C c[1B[K[A[18C [1B[K[A[18Cc[1B[K[A[18C [1B[K[A[18C              i [K[A[136C[K[1B[K[A[136C                               e --show-toplevel)/.venv/bin/uni-index"' >> ~/.zshrc[K[1B[K[A[A[104C[K[1B[K[1B[K[A[A[104C[?2004l[1B[0m[27m[24m[Jquote> [K[?2004h[?2004l
+[0m[27m[24m[Jquote> [K[?2004h"[?2004l
+[0m[27m[24m[Jquote> [K[?2004h'[?2004l
+alias uni-index="PYTHONPATH=src \$(git rev-pars
+
+"
+
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hsstr ear && clear[?2004l
+zsh: command not found: stear
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hcclear && reset[?2004l
+[H[2J[3Jc]104[!p[?3;4l[4l>[?69l[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7m.venv/bin/python -c "import sys; print('\n'.join(sys.path))"[27m[60D[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m;[27m [27mp[27mr[27mi[27mn[27mt[27m([27m'[27m\[27mn[27m'[27m.[27mj[27mo[27mi[27mn[27m([27ms[27my[27ms[27m.[27mp[27ma[27mt[27mh[27m)[27m)[27m"[?2004l
+
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python312.zip
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/lib-dynload
+/Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/lib/python3.12/site-packages
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7mls -la .venv/lib/python3.12/site-packages/ | grep -E 'uni_index|editable'[27m[73D[27ml[27ms[27m [27m-[27ml[27ma[27m [27m.[27mv[27me[27mn[27mv[27m/[27ml[27mi[27mb[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m3[27m.[27m1[27m2[27m/[27ms[27mi[27mt[27me[27m-[27mp[27ma[27mc[27mk[27ma[27mg[27me[27ms[27m/[27m [27m|[27m [27mg[27mr[27me[27mp[27m [27m-[27mE[27m [27m'[27mu[27mn[27mi[27m_[27mi[27mn[27md[27me[27mx[27m|[27me[27md[27mi[27mt[27ma[27mb[27ml[27me[27m'[?2004l
+-rw-r--r--   1 jash  staff    61 Oct 27 13:45 __editable__.uni_index-0.1.0.pth
+drwxr-xr-x@ 10 jash  staff   320 Oct 27 13:47 uni_index-0.1.0.dist-info
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7m.venv/bin/python -c "import sys; sys.path.insert(0, 'src'); import uni_index; print(un[7mi[7m_index.__file__)"[27m[K[A[33C[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m;[27m [27ms[27my[27ms[27m.[27mp[27ma[27mt[27mh[27m.[27mi[27mn[27ms[27me[27mr[27mt[27m([27m0[27m,[27m [27m'[27ms[27mr[27mc[27m'[27m)[27m;[27m [27mi[27mm[27mp[27mo[27mr[27mt[27m [27mu[27mn[27mi[27m_[27mi[27mn[27md[27me[27mx[27m;[27m [27mp[27mr[27mi[27mn[27mt[27m([27mu[27mni[27m_[27mi[27mn[27md[27me[27mx[27m.[27m_[27m_[27mf[27mi[27ml[27me[27m_[27m_[27m)[27m"[?2004l
+/Users/jash/Desktop/CDs/Applierer/university-crawl-index/src/uni_index/__init__.py
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7m.venv/bin/python -c "import sys; sys.path.insert(0, 'src'); import uni_index; print(un[7mi[7m_index.__file__)"[27m[K[A[33C[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m;[27m [27ms[27my[27ms[27m.[27mp[27ma[27mt[27mh[27m.[27mi[27mn[27ms[27me[27mr[27mt[27m([27m0[27m,[27m [27m'[27ms[27mr[27mc[27m'[27m)[27m;[27m [27mi[27mm[27mp[27mo[27mr[27mt[27m [27mu[27mn[27mi[27m_[27mi[27mn[27md[27me[27mx[27m;[27m [27mp[27mr[27mi[27mn[27mt[27m([27mu[27mni[27m_[27mi[27mn[27md[27me[27mx[27m.[27m_[27m_[27mf[27mi[27ml[27me[27m_[27m_[27m)[27m"[?2004l
+/Users/jash/Desktop/CDs/Applierer/university-crawl-index/src/uni_index/__init__.py
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7m.venv/bin/python -c "import importlib.util; print(importlib.util.find_spec('uni_index'[7m)[7m)"[27m[K[A[48C[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27mi[27mm[27mp[27mo[27mr[27mt[27ml[27mi[27mb[27m.[27mu[27mt[27mi[27ml[27m;[27m [27mp[27mr[27mi[27mn[27mt[27m([27mi[27mm[27mp[27mo[27mr[27mt[27ml[27mi[27mb[27m.[27mu[27mt[27mi[27ml[27m.[27mf[27mi[27mn[27md[27m_[27ms[27mp[27me[27mc[27m([27m'[27mu[27mn[27mi[27m_[27mi[27mn[27md[27me[27mx[27m')[27m)[27m"[?2004l
+None
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[J(base) jash@MacBook-Pro-2 university-crawl-index % [K[?2004hcconda deactivate[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004hcconda deactivate[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004heecjp  ho $CONA DA_PREFO IX[?2004l
+
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004hwwhich P python[?2004l
+python not found
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004hrrm -rf .vev v nv[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h//Llibra     /  [7mrm -rf .venv[27m
+[7m/Library/Frameworks/Python.framework/Versions/3.12/bin/python3 -m venv .venv[27m[K
+[7m.venv/bin/python -m pip install -U pip setuptools wheel[27m[K
+[7m.venv/bin/python -m pip install .[27m[K[3A[11C[27mr[27mm[27m [27m-[27mr[27mf[27m [27m.[27mv[27me[27mn[27mv[1B[27m/[27mL[27mi[27mb[27mr[27ma[27mr[27my[27m/[27mF[27mr[27ma[27mm[27me[27mw[27mo[27mr[27mk[27ms[27m/[27mP[27my[27mt[27mh[27mo[27mn[27m.[27mf[27mr[27ma[27mm[27me[27mw[27mo[27mr[27mk[27m/[27mV[27me[27mr[27ms[27mi[27mo[27mn[27ms[27m/[27m3[27m.[27m1[27m2[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m3[27m [27m-[27mm[27m [27mv[27me[27mn[27mv[27m [27m.[27mv[27me[27mn[27mv[1B[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mm[27m [27mp[27mi[27mp[27m [27mi[27mn[27ms[27mt[27ma[27ml[27ml[27m [27m-[27mU[27m [27mp[27mi[27mp[27m [27ms[27me[27mt[27mu[27mp[27mt[27mo[27mo[27ml[27ms[27m [27mw[27mh[27me[27me[27ml[1B[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mm[27m [27mp[27mi[27mp[27m [27mi[27mn[27ms[27mt[27ma[27ml[27ml[27m [27m.[?2004l
+Requirement already satisfied: pip in ./.venv/lib/python3.12/site-packages (24.0)
+Collecting pip
+  Using cached pip-26.2.2-py3-none-any.whl.metadata (4.6 kB)
+Collecting setuptools
+  Using cached setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+Collecting wheel
+  Using cached wheel-0.48.0-py3-none-any.whl.metadata (2.3 kB)
+Collecting packaging>=24.0 (from wheel)
+  Using cached packaging-26.3-py3-none-any.whl.metadata (3.5 kB)
+Using cached pip-26.2.2-py3-none-any.whl (1.8 MB)
+Using cached setuptools-84.2.1-py3-none-any.whl (876 kB)
+Using cached wheel-0.48.0-py3-none-any.whl (33 kB)
+Using cached packaging-26.3-py3-none-any.whl (129 kB)
+Installing collected packages: setuptools, pip, packaging, wheel
+  Attempting uninstall: pip
+    Found existing installation: pip 24.0
+    Uninstalling pip-24.0:
+      Successfully uninstalled pip-24.0
+Successfully installed packaging-26.3 pip-26.2.2 setuptools-84.2.1 wheel-0.48.0
+Processing ./.
+  Installing build dependencies ... [?25l- done
+[?25h  Getting requirements to build wheel ... [?25l- done
+[?25h  Preparing metadata (pyproject.toml) ... [?25l- done
+[?25hCollecting click>=8.1 (from uni-index==0.1.0)
+  Using cached click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting PyYAML>=6.0 (from uni-index==0.1.0)
+  Using cached pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl.metadata (2.4 kB)
+Using cached click-8.5.0-py3-none-any.whl (125 kB)
+Using cached pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl (173 kB)
+Building wheels for collected packages: uni-index
+  Building wheel for uni-index (pyproject.toml) ... [?25l- done
+[?25h  Created wheel for uni-index: filename=uni_index-0.1.0-py3-none-any.whl size=14267 sha256=9ccd6a42013e3744141743ecc53cb7ab631e8261a2d73835594a48f384f6cc80
+  Stored in directory: /private/var/folders/89/07krgt095gnc14blgyc7h1rm0000gn/T/pip-ephem-wheel-cache-r4uf3fuq/wheels/41/0b/e8/37d70d17220d0b0ff4adcc10731a83950dced818a26719fdbd
+Successfully built uni-index
+Installing collected packages: PyYAML, click, uni-index
+[?25l[2K   [38;2;114;156;31m━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━[0m [32m3/3[0m [uni-index]
+[?25h[1A[2KSuccessfully installed PyYAML-6.0.3 click-8.5.0 uni-index-0.1.0
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7m.venv/bin/python -c "import uni_index; print(uni_index.__file__)"[27m
+[7m.venv/bin/uni-index --help[27m[K[A[18C[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27mu[27mn[27mi[27m_[27mi[27mn[27md[27me[27mx[27m;[27m [27mp[27mr[27mi[27mn[27mt[27m([27mu[27mn[27mi[27m_[27mi[27mn[27md[27me[27mx[27m.[27m_[27m_[27mf[27mi[27ml[27me[27m_[27m_[27m)[27m"[1B[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mu[27mn[27mi[27m-[27mi[27mn[27md[27me[27mx[27m [27m-[27m-[27mh[27me[27ml[27mp[?2004l
+/Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/lib/python3.12/site-packages/uni_index/__init__.py
+Usage: uni-index [OPTIONS] COMMAND [ARGS]...
+
+  Manage the canonical university crawl-target index.
+
+Options:
+  --version  Show the version and exit.
+  --help     Show this message and exit.
+
+Commands:
+  import-hipo  Turn a downloaded Hipo JSON file into generated,...
+  mark         Update the crawl status for a single domain.
+  normalize    Merge SOURCES (files or folders; later ones override...
+  split        Split one hand-edited source file into per-country curated...
+  status       Show a summary of crawl status from the master index.
+  sync-db      Upsert the canonical JSON index into the SQL master index...
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7m.venv/bin/python -c "import sys; print('\n'.join(sys.path))"[27m[60D[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m;[27m [27mp[27mr[27mi[27mn[27mt[27m([27m'[27m\[27mn[27m'[27m.[27mj[27mo[27mi[27mn[27m([27ms[27my[27ms[27m.[27mp[27ma[27mt[27mh[27m)[27m)[27m"[?2004l
+
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python312.zip
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/lib-dynload
+/Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/lib/python3.12/site-packages
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7mls -la .venv/lib/python3.12/site-packages/ | grep -E 'uni_index|editable'[27m[73D[27ml[27ms[27m [27m-[27ml[27ma[27m [27m.[27mv[27me[27mn[27mv[27m/[27ml[27mi[27mb[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m3[27m.[27m1[27m2[27m/[27ms[27mi[27mt[27me[27m-[27mp[27ma[27mc[27mk[27ma[27mg[27me[27ms[27m/[27m [27m|[27m [27mg[27mr[27me[27mp[27m [27m-[27mE[27m [27m'[27mu[27mn[27mi[27m_[27mi[27mn[27md[27me[27mx[27m|[27me[27md[27mi[27mt[27ma[27mb[27ml[27me[27m'[?2004l
+drwxr-xr-x  10 jash  staff   320 Oct 29 13:04 uni_index
+drwxr-xr-x@ 10 jash  staff   320 Oct 29 13:04 uni_index-0.1.0.dist-info
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7m.venv/bin/python -c "import sys; sys.path.insert(0, 'src'); import uni_index; print(uni_index[7m.[7m__file__)"[27m[K[A[33C[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m;[27m [27ms[27my[27ms[27m.[27mp[27ma[27mt[27mh[27m.[27mi[27mn[27ms[27me[27mr[27mt[27m([27m0[27m,[27m [27m'[27ms[27mr[27mc[27m'[27m)[27m;[27m [27mi[27mm[27mp[27mo[27mr[27mt[27m [27mu[27mn[27mi[27m_[27mi[27mn[27md[27me[27mx[27m;[27m [27mp[27mr[27mi[27mn[27mt[27m([27mu[27mn[27mi[27m_[27mi[27mn[27md[27me[27mx.[27m_[27m_[27mf[27mi[27ml[27me[27m_[27m_[27m)[27m"[?2004l
+/Users/jash/Desktop/CDs/Applierer/university-crawl-index/src/uni_index/__init__.py
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7m.venv/bin/python -c "import importlib.util; print(importlib.util.find_spec('uni_index'))"[27m[89D[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27mi[27mm[27mp[27mo[27mr[27mt[27ml[27mi[27mb[27m.[27mu[27mt[27mi[27ml[27m;[27m [27mp[27mr[27mi[27mn[27mt[27m([27mi[27mm[27mp[27mo[27mr[27mt[27ml[27mi[27mb[27m.[27mu[27mt[27mi[27ml[27m.[27mf[27mi[27mn[27md[27m_[27ms[27mp[27me[27mc[27m([27m'[27mu[27mn[27mi[27m_[27mi[27mn[27md[27me[27mx[27m'[27m)[27m)[27m"[?2004l
+ModuleSpec(name='uni_index', loader=<_frozen_importlib_external.SourceFileLoader object at 0x1030c3560>, origin='/Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/lib/python3.12/site-packages/uni_index/__init__.py', submodule_search_locations=['/Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/lib/python3.12/site-packages/uni_index'])
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venv/bin/python -c "import ni  uni- _od  ondex     inc dex; print) (uni_index.__file--  __. )"[?2004l
+/Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/lib/python3.12/site-packages/uni_index/__init__.py
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venb v/bin/python       uni- _n index[?2004l
+zsh: no such file or directory: .venv/bin/uni_index
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h.venv/bin/uni_index --help[P[12C [13D-index --help[12D[12C[?2004l
+Usage: uni-index [OPTIONS] COMMAND [ARGS]...
+
+  Manage the canonical university crawl-target index.
+
+Options:
+  --version  Show the version and exit.
+  --help     Show this message and exit.
+
+Commands:
+  import-hipo  Turn a downloaded Hipo JSON file into generated,...
+  mark         Update the crawl status for a single domain.
+  normalize    Merge SOURCES (files or folders; later ones override...
+  split        Split one hand-edited source file into per-country curated...
+  status       Show a summary of crawl status from the master index.
+  sync-db      Upsert the canonical JSON index into the SQL master index...
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h.venv/bin/uni-index --help     statusstatus [6C[?2004l
+Crawl status summary:
+  pending      10256
+  TOTAL        10256
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venv/bin/python -c "  "ip mport uni_ond   index; print(in  uni_index.__file__)"[?2004l
+/Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/lib/python3.12/site-packages/uni_index/__init__.py
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venv/bin/uni-index --help[?2004l
+Usage: uni-index [OPTIONS] COMMAND [ARGS]...
+
+  Manage the canonical university crawl-target index.
+
+Options:
+  --version  Show the version and exit.
+  --help     Show this message and exit.
+
+Commands:
+  import-hipo  Turn a downloaded Hipo JSON file into generated,...
+  mark         Update the crawl status for a single domain.
+  normalize    Merge SOURCES (files or folders; later ones override...
+  split        Split one hand-edited source file into per-country curated...
+  status       Show a summary of crawl status from the master index.
+  sync-db      Upsert the canonical JSON index into the SQL master index...
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h..venv/bin. . /uni-index stast  tus[?2004l
+Crawl status summary:
+  pending      10256
+  TOTAL        10256
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7m.venv/bin/python --version[27m
+[7mls -lO .venv/lib/python3.12/site-packages | grep -iE "editable|\.pth"[27m[K
+[7m.venv/bin/python -v -c pass 2>&1 | grep -i pth[27m[K
+[7m.venv/bin/python -c "import sys; print(*sys.path, sep='\n')"[27m[K[3A[16D[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27m-[27mv[27me[27mr[27ms[27mi[27mo[27mn[1B[27ml[27ms[27m [27m-[27ml[27mO[27m [27m.[27mv[27me[27mn[27mv[27m/[27ml[27mi[27mb[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m3[27m.[27m1[27m2[27m/[27ms[27mi[27mt[27me[27m-[27mp[27ma[27mc[27mk[27ma[27mg[27me[27ms[27m [27m|[27m [27mg[27mr[27me[27mp[27m [27m-[27mi[27mE[27m [27m"[27me[27md[27mi[27mt[27ma[27mb[27ml[27me[27m|[27m\[27m.[27mp[27mt[27mh[27m"[1B[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mv[27m [27m-[27mc[27m [27mp[27ma[27ms[27ms[27m [27m2[27m>[27m&[27m1[27m [27m|[27m [27mg[27mr[27me[27mp[27m [27m-[27mi[27m [27mp[27mt[27mh[1B[27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mc[27m [27m"[27mi[27mm[27mp[27mo[27mr[27mt[27m [27ms[27my[27ms[27m;[27m [27mp[27mr[27mi[27mn[27mt[27m([27m*[27ms[27my[27ms[27m.[27mp[27ma[27mt[27mh[27m,[27m [27ms[27me[27mp[27m=[27m'[27m\[27mn[27m'[27m)[27m"[?2004l
+Python 3.12.2
+-rw-r--r--   1 jash  staff  hidden  151 Oct 29 13:04 distutils-precedence.pth
+Skipping hidden .pth file: '/Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/lib/python3.12/site-packages/distutils-precedence.pth'
+Skipping hidden .pth file: '/Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/lib/python3.12/site-packages/distutils-precedence.pth'
+
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python312.zip
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12
+/Library/Frameworks/Python.framework/Versions/3.12/lib/python3.12/lib-dynload
+/Users/jash/Desktop/CDs/Applierer/university-crawl-index/.venv/lib/python3.12/site-packages
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7m  .venv/bin/python -m venv /tmp/smoke && /tmp/smoke/bin/pip install . && /tmp/smoke/bin/uni-i[7mn[7mdex --help[27m[K[A[33C[27m [27m [27m.[27mv[27me[27mn[27mv[27m/[27mb[27mi[27mn[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m [27m-[27mm[27m [27mv[27me[27mn[27mv[27m [27m/[27mt[27mm[27mp[27m/[27ms[27mm[27mo[27mk[27me[27m [27m&[27m&[27m [27m/[27mt[27mm[27mp[27m/[27ms[27mm[27mo[27mk[27me[27m/[27mb[27mi[27mn[27m/[27mp[27mi[27mp[27m [27mi[27mn[27ms[27mt[27ma[27ml[27ml[27m [27m.[27m [27m&[27m&[27m [27m/[27mt[27mm[27mp[27m/[27ms[27mm[27mo[27mk[27me[27m/[27mb[27mi[27mn[27m/[27mu[27mn[27mi[27m-[27min[27md[27me[27mx[27m [27m-[27m-[27mh[27me[27ml[27mp[?2004l
+Processing /Users/jash/Desktop/CDs/Applierer/university-crawl-index
+  Installing build dependencies ... [?25l- \ done
+[?25h  Getting requirements to build wheel ... [?25l- done
+[?25h  Preparing metadata (pyproject.toml) ... [?25l- done
+[?25hCollecting click>=8.1 (from uni-index==0.1.0)
+  Using cached click-8.5.0-py3-none-any.whl.metadata (2.6 kB)
+Collecting PyYAML>=6.0 (from uni-index==0.1.0)
+  Using cached pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl.metadata (2.4 kB)
+Using cached click-8.5.0-py3-none-any.whl (125 kB)
+Using cached pyyaml-6.0.3-cp312-cp312-macosx_11_0_arm64.whl (173 kB)
+Building wheels for collected packages: uni-index
+  Building wheel for uni-index (pyproject.toml) ... [?25l- done
+[?25h  Created wheel for uni-index: filename=uni_index-0.1.0-py3-none-any.whl size=14267 sha256=6cecb9454ce1969896f0c8d17dc2e4bed4f1b02484ef109f9ee54b564e970213
+  Stored in directory: /Users/jash/Library/Caches/pip/wheels/41/0b/e8/37d70d17220d0b0ff4adcc10731a83950dced818a26719fdbd
+Successfully built uni-index
+Installing collected packages: PyYAML, click, uni-index
+Successfully installed PyYAML-6.0.3 click-8.5.0 uni-index-0.1.0
+
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m A new release of pip is available: [0m[31;49m24.0[0m[39;49m -> [0m[32;49m26.2.2[0m
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m To update, run: [0m[32;49mpython3.12 -m pip install --upgrade pip[0m
+Usage: uni-index [OPTIONS] COMMAND [ARGS]...
+
+  Manage the canonical university crawl-target index.
+
+Options:
+  --version  Show the version and exit.
+  --help     Show this message and exit.
+
+Commands:
+  import-hipo  Turn a downloaded Hipo JSON file into generated,...
+  mark         Update the crawl status for a single domain.
+  normalize    Merge SOURCES (files or folders; later ones override...
+  split        Split one hand-edited source file into per-country curated...
+  status       Show a summary of crawl status from the master index.
+  sync-db      Upsert the canonical JSON index into the SQL master index...
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004hlls[?2004l
+build			dist			pyproject.toml		src			uni_index.db
+data			fetcher.py		README.md		tests			world_universities.json
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h//tmp/m smoke/bin/pip install setuptol l ols && ls -la 0 /tmp/smoke/lib/pyyho   thon3.12/site-l packages/*.pth [K[K[?2004l
+Collecting setuptools
+  Using cached setuptools-84.2.1-py3-none-any.whl.metadata (6.6 kB)
+Using cached setuptools-84.2.1-py3-none-any.whl (876 kB)
+Installing collected packages: setuptools
+Successfully installed setuptools-84.2.1
+
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m A new release of pip is available: [0m[31;49m24.0[0m[39;49m -> [0m[32;49m26.2.2[0m
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m To update, run: [0m[32;49mpython3.12 -m pip install --upgrade pip[0m
+ls: invalid option -- 0
+usage: ls [-@ABCFGHILOPRSTUWXabcdefghiklmnopqrstuvwxy1%,] [--color=when] [-D format] [file ...]
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h/tmp/smoke/bin/pip install setuptools && ls -l0 /tmp/smoke/lib/python3.12/site-packages/*.pth [K[K[A[136Ch[K[1B[K[A[135Ch h h h h h h h h h h h h h h h h h h h h h h h  h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h h chlhh h h [?2004l[1Bzsh: no such file or directory: /tmp/smoke/binh
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004hcclea  c  /tmp/smoke/binh/pip install setuptools && ls -l0 /tmp/smoke/lib/python3.12/site-packages/*.pth [K[A[44Cls[K[1B[K[A[46C/tmp/smoke/bin/pip install setuptools && ls -l0 /tmp/smoke/lib/python3.12/site-packages/*.pth [K[A[58Ch[K[1B[K[A[59C[15D               [15D/tmp/smoke/binh/pip install setuptools && ls -l0 /tmp/smoke/lib/python3.12/site-packages/*.pth [K[A[44Cls[K[1B[K[A[46C  .venv/bin/python -m venv /tmp/smoke && /tmp/smoke/bin/pip install . && /tmp/smoke/bin/uni-index --help[K[A[33C[P[P[18C-version[K[1Bls -lO .venv/lib/python3.12/site-packages | grep -iE "editable|\.pth"
+.venv/bin/python -v -c pass 2>&1 | grep -i pth[K
+.venv/bin/python -c "import sys; print(*sys.path, sep='\n')"[K[A[1B[3A[44C  .venv/bin/python -m venv /tmp/smoke && /tmp/smoke/bin/pip install . && /tmp/smoke/bin/uni-index --help                                                          [1B[K[1B[K[A[A[11C[A[33Cls[K[1B[K[A[46C/tmp/smoke/bin/pip install setuptools && ls -l0 /tmp/smoke/lib/python3.12/site-packages/*.pth [K[A[58Ch[K[1B[K[A[59C[15D               [15D[?2004l[1B[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h/tmp/smoke/binh/pip install setuptools && ls -l0 /tmp/smoke/lib/python3.12/site-packages/*.pth [K[A[58Ch[K[1B[K[A[59C[15D               [15D[?2004l[1B[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h//tmp/smole  ke/bin/pip install setuptools && -ls l0 o Ols lO [1C[1C[1C-lO[1C[1C /tmp/smoke/lib/python3.12/site-packga  ages/*.pth [K[A[136C[K[1B[K[A[136C th [K[K[?2004l
+Requirement already satisfied: setuptools in /private/tmp/smoke/lib/python3.12/site-packages (84.2.1)
+
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m A new release of pip is available: [0m[31;49m24.0[0m[39;49m -> [0m[32;49m26.2.2[0m
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m To update, run: [0m[32;49mpython3.12 -m pip install --upgrade pip[0m
+-rw-r--r--  1 jash  wheel  - 151 Nov  3 16:55 /tmp/smoke/lib/python3.12/site-packages/distutils-precedence.pth
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h/tmp/smoke/bin/pip install setuptools && ls -lO /tmp/smoke/lib/python3.12/site-packages/*.pth [K[A[58Ch[K[1B[K[A[59C/pip install setuptools && ls -lO /tmp/smoke/lib/python3.12/site-packages/*.pth [K[A[44C[K[1B[K[A[44C[1B[K[K[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004hcclear && reset[?2004l
+[3J[H[2J[3g        H        H        H        H        H        H        H        H        H        H        H        H        H        H        H        H        Hc[!p[?3;4l[4l>[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h//tno  mo p /oke   smoke. /pip/    bin/pip/    p install setuptools && -ls lO  /tmp/smoke. /lib/python3.12/se ite-ac  pack kages/*.pth [K[K[?2004l
+Requirement already satisfied: setuptools in /private/tmp/smoke/lib/python3.12/site-packages (84.2.1)
+
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m A new release of pip is available: [0m[31;49m24.0[0m[39;49m -> [0m[32;49m26.2.2[0m
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m To update, run: [0m[32;49mpython3.12 -m pip install --upgrade pip[0m
+zsh: command not found: -ls
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h/tmp/smoke/bin/pip install setuptools && -ls lO /tmp/smoke/lib/python3.12/site-packages/*.pth [K[A[44C[K[1B[K[A[44C[1B[K[K[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004hcclear && rest et[?2004l
+[3J[H[2J[3g        H        H        H        H        H        H        H        H        H        H        H        H        H        H        H        H        Hc[!p[?3;4l[4l>[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h[7m/tmp/smoke/bin/pip install setuptools && ls -lO /tmp/smoke/lib/python3.12/site-packages/*.pth[27m [K[A[44C[27m/[27mt[27mm[27mp[27m/[27ms[27mm[27mo[27mk[27me[27m/[27mb[27mi[27mn[27m/[27mp[27mi[27mp[27m [27mi[27mn[27ms[27mt[27ma[27ml[27ml[27m [27ms[27me[27mt[27mu[27mp[27mt[27mo[27mo[27ml[27ms[27m [27m&[27m&[27m [27ml[27ms[27m [27m-[27ml[27mO[27m [27m/[27mt[27mm[27mp[27m/[27ms[27mm[27mo[27mk[27me[27m/[27ml[27mi[27mb[27m/[27mp[27my[27mt[27mh[27mo[27mn[27m3[27m.[27m1[27m2[27m/[27ms[27mi[27mt[27me[27m-[27mp[27ma[27mc[27mk[27ma[27mg[27me[27ms[27m/[27m*[27m.[27mp[27mt[27mh [K[?2004l
+Requirement already satisfied: setuptools in /private/tmp/smoke/lib/python3.12/site-packages (84.2.1)
+
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m A new release of pip is available: [0m[31;49m24.0[0m[39;49m -> [0m[32;49m26.2.2[0m
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m To update, run: [0m[32;49mpython3.12 -m pip install --upgrade pip[0m
+-rw-r--r--  1 jash  wheel  - 151 Nov  3 16:55 /tmp/smoke/lib/python3.12/site-packages/distutils-precedence.pth
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004h//tmo p/smoke/bin/pip install setuptools && -ls lO /tmpsmoke     /smpkle.     oke. /lib/python3.12/site-packages/*.pth [K[K[?2004l
+Requirement already satisfied: setuptools in /private/tmp/smoke/lib/python3.12/site-packages (84.2.1)
+
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m A new release of pip is available: [0m[31;49m24.0[0m[39;49m -> [0m[32;49m26.2.2[0m
+[1m[[0m[34;49mnotice[0m[1;39;49m][0m[39;49m To update, run: [0m[32;49mpython3.12 -m pip install --upgrade pip[0m
+zsh: command not found: -ls
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004hh ggit/add     add data/d  dit st/ src/ text   ests/ Rea  EAD.md pyproject.toml .github/[?2004l
+fatal: pathspec 'READ.md' did not match any files
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004hgit add data/ dist/ src/ tests/ READ.md pyproject.toml .github/M.md pyproject.toml .github/[27DE.md pyproject.toml .github/[27D[27C[?2004l
+The following paths are ignored by one of your .gitignore files:
+dist
+[33mhint: Use -f if you really want to add them.[m
+[33mhint: Disable this message with "git config advice.addIgnoredFile false"[m
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004hgit add data/ dist/ src/ tests/ README.md pyproject.toml .github/[P[46C [47D[P[46C [47D[P[46C [47D[P[46C [47D[P[46C [47D[P[45C [47D[46C[?2004l
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004hggit status-statusstatus [?2004l
+On branch cp3-country-split
+Changes to be committed:
+  (use "git restore --staged <file>..." to unstage)
+        [32mmodified:   .github/workflows/validate.yml[m
+        [32mmodified:   README.md[m
+        [32mnew file:   data/reports/hipo_import.yaml[m
+        [32mnew file:   data/sources/curated/ca.yaml[m
+        [32mnew file:   data/sources/curated/gb.yaml[m
+        [32mnew file:   data/sources/curated/in.yaml[m
+        [32mnew file:   data/sources/curated/us.yaml[m
+        [32mdeleted:    data/sources/hipo_import.yaml[m
+        [32mnew file:   data/sources/imported/ad.yaml[m
+        [32mnew file:   data/sources/imported/ae.yaml[m
+        [32mnew file:   data/sources/imported/af.yaml[m
+        [32mnew file:   data/sources/imported/ag.yaml[m
+        [32mnew file:   data/sources/imported/al.yaml[m
+        [32mnew file:   data/sources/imported/am.yaml[m
+        [32mnew file:   data/sources/imported/ao.yaml[m
+        [32mnew file:   data/sources/imported/ar.yaml[m
+        [32mnew file:   data/sources/imported/at.yaml[m
+        [32mnew file:   data/sources/imported/au.yaml[m
+        [32mnew file:   data/sources/imported/az.yaml[m
+        [32mnew file:   data/sources/imported/ba.yaml[m
+        [32mnew file:   data/sources/imported/bb.yaml[m
+        [32mnew file:   data/sources/imported/bd.yaml[m
+        [32mnew file:   data/sources/imported/be.yaml[m
+        [32mnew file:   data/sources/imported/bf.yaml[m
+        [32mnew file:   data/sources/imported/bg.yaml[m
+        [32mnew file:   data/sources/imported/bh.yaml[m
+        [32mnew file:   data/sources/imported/bi.yaml[m
+        [32mnew file:   data/sources/imported/bj.yaml[m
+        [32mnew file:   data/sources/imported/bm.yaml[m
+        [32mnew file:   data/sources/imported/bn.yaml[m
+        [32mnew file:   data/sources/imported/bo.yaml[m
+        [32mnew file:   data/sources/imported/br.yaml[m
+        [32mnew file:   data/sources/imported/bs.yaml[m
+        [32mnew file:   data/sources/imported/bt.yaml[m
+        [32mnew file:   data/sources/imported/bw.yaml[m
+        [32mnew file:   data/sources/imported/by.yaml[m
+        [32mnew file:   data/sources/imported/bz.yaml[m
+        [32mnew file:   data/sources/imported/ca.yaml[m
+        [32mnew file:   data/sources/imported/cd.yaml[m
+        [32mnew file:   data/sources/imported/cf.yaml[m
+        [32mnew file:   data/sources/imported/cg.yaml[m
+        [32mnew file:   data/sources/imported/ch.yaml[m
+        [32mnew file:   data/sources/imported/ci.yaml[m
+        [32mnew file:   data/sources/imported/cl.yaml[m
+        [32mnew file:   data/sources/imported/cm.yaml[m
+        [32mnew file:   data/sources/imported/cn.yaml[m
+        [32mnew file:   data/sources/imported/co.yaml[m
+        [32mnew file:   data/sources/imported/cr.yaml[m
+        [32mnew file:   data/sources/imported/cu.yaml[m
+        [32mnew file:   data/sources/imported/cv.yaml[m
+        [32mnew file:   data/sources/imported/cy.yaml[m
+        [32mnew file:   data/sources/imported/cz.yaml[m
+        [32mnew file:   data/sources/imported/de.yaml[m
+        [32mnew file:   data/sources/imported/dj.yaml[m
+        [32mnew file:   data/sources/imported/dk.yaml[m
+        [32mnew file:   data/sources/imported/dm.yaml[m
+        [32mnew file:   data/sources/imported/do.yaml[m
+        [32mnew file:   data/sources/imported/dz.yaml[m
+        [32mnew file:   data/sources/imported/ec.yaml[m
+        [32mnew file:   data/sources/imported/ee.yaml[m
+        [32mnew file:   data/sources/imported/eg.yaml[m
+        [32mnew file:   data/sources/imported/er.yaml[m
+        [32mnew file:   data/sources/imported/es.yaml[m
+        [32mnew file:   data/sources/imported/et.yaml[m
+        [32mnew file:   data/sources/imported/fi.yaml[m
+        [32mnew file:   data/sources/imported/fj.yaml[m
+        [32mnew file:   data/sources/imported/fo.yaml[m
+        [32mnew file:   data/sources/imported/fr.yaml[m
+        [32mnew file:   data/sources/imported/ga.yaml[m
+        [32mnew file:   data/sources/imported/gb.yaml[m
+        [32mnew file:   data/sources/imported/gd.yaml[m
+        [32mnew file:   data/sources/imported/ge.yaml[m
+        [32mnew file:   data/sources/imported/gf.yaml[m
+        [32mnew file:   data/sources/imported/gh.yaml[m
+        [32mnew file:   data/sources/imported/gl.yaml[m
+        [32mnew file:   data/sources/imported/gm.yaml[m
+        [32mnew file:   data/sources/imported/gn.yaml[m
+        [32mnew file:   data/sources/imported/gp.yaml[m
+        [32mnew file:   data/sources/imported/gq.yaml[m
+        [32mnew file:   data/sources/imported/gr.yaml[m
+        [32mnew file:   data/sources/imported/gt.yaml[m
+        [32mnew file:   data/sources/imported/gu.yaml[m
+        [32mnew file:   data/sources/imported/gy.yaml[m
+        [32mnew file:   data/sources/imported/hk.yaml[m
+        [32mnew file:   data/sources/imported/hn.yaml[m
+        [32mnew file:   data/sources/imported/hr.yaml[m
+        [32mnew file:   data/sources/imported/ht.yaml[m
+        [32mnew file:   data/sources/imported/hu.yaml[m
+        [32mnew file:   data/sources/imported/id.yaml[m
+        [32mnew file:   data/sources/imported/ie.yaml[m
+        [32mnew file:   data/sources/imported/il.yaml[m
+        [32mnew file:   data/sources/imported/in.yaml[m
+        [32mnew file:   data/sources/imported/iq.yaml[m
+        [32mnew file:   data/sources/imported/ir.yaml[m
+        [32mnew file:   data/sources/imported/is.yaml[m
+        [32mnew file:   data/sources/imported/it.yaml[m
+        [32mnew file:   data/sources/imported/jm.yaml[m
+        [32mnew file:   data/sources/imported/jo.yaml[m
+        [32mnew file:   data/sources/imported/jp.yaml[m
+        [32mnew file:   data/sources/imported/ke.yaml[m
+        [32mnew file:   data/sources/imported/kg.yaml[m
+        [32mnew file:   data/sources/imported/kh.yaml[m
+        [32mnew file:   data/sources/imported/kn.yaml[m
+        [32mnew file:   data/sources/imported/kp.yaml[m
+        [32mnew file:   data/sources/imported/kr.yaml[m
+        [32mnew file:   data/sources/imported/kw.yaml[m
+        [32mnew file:   data/sources/imported/ky.yaml[m
+        [32mnew file:   data/sources/imported/kz.yaml[m
+        [32mnew file:   data/sources/imported/la.yaml[m
+        [32mnew file:   data/sources/imported/lb.yaml[m
+        [32mnew file:   data/sources/imported/lc.yaml[m
+        [32mnew file:   data/sources/imported/li.yaml[m
+        [32mnew file:   data/sources/imported/lk.yaml[m
+        [32mnew file:   data/sources/imported/lr.yaml[m
+        [32mnew file:   data/sources/imported/ls.yaml[m
+        [32mnew file:   data/sources/imported/lt.yaml[m
+        [32mnew file:   data/sources/imported/lu.yaml[m
+        [32mnew file:   data/sources/imported/lv.yaml[m
+        [32mnew file:   data/sources/imported/ly.yaml[m
+        [32mnew file:   data/sources/imported/ma.yaml[m
+        [32mnew file:   data/sources/imported/md.yaml[m
+        [32mnew file:   data/sources/imported/me.yaml[m
+        [32mnew file:   data/sources/imported/mg.yaml[m
+        [32mnew file:   data/sources/imported/mk.yaml[m
+        [32mnew file:   data/sources/imported/ml.yaml[m
+        [32mnew file:   data/sources/imported/mm.yaml[m
+        [32mnew file:   data/sources/imported/mn.yaml[m
+        [32mnew file:   data/sources/imported/mo.yaml[m
+        [32mnew file:   data/sources/imported/mr.yaml[m
+        [32mnew file:   data/sources/imported/ms.yaml[m
+        [32mnew file:   data/sources/imported/mt.yaml[m
+        [32mnew file:   data/sources/imported/mu.yaml[m
+        [32mnew file:   data/sources/imported/mv.yaml[m
+        [32mnew file:   data/sources/imported/mw.yaml[m
+        [32mnew file:   data/sources/imported/mx.yaml[m
+        [32mnew file:   data/sources/imported/my.yaml[m
+        [32mnew file:   data/sources/imported/mz.yaml[m
+        [32mnew file:   data/sources/imported/na.yaml[m
+        [32mnew file:   data/sources/imported/nc.yaml[m
+        [32mnew file:   data/sources/imported/ne.yaml[m
+        [32mnew file:   data/sources/imported/ng.yaml[m
+        [32mnew file:   data/sources/imported/ni.yaml[m
+        [32mnew file:   data/sources/imported/nl.yaml[m
+        [32mnew file:   data/sources/imported/no.yaml[m
+        [32mnew file:   data/sources/imported/np.yaml[m
+        [32mnew file:   data/sources/imported/nu.yaml[m
+        [32mnew file:   data/sources/imported/nz.yaml[m
+        [32mnew file:   data/sources/imported/om.yaml[m
+        [32mnew file:   data/sources/imported/pa.yaml[m
+        [32mnew file:   data/sources/imported/pe.yaml[m
+        [32mnew file:   data/sources/imported/pf.yaml[m
+        [32mnew file:   data/sources/imported/pg.yaml[m
+        [32mnew file:   data/sources/imported/ph.yaml[m
+        [32mnew file:   data/sources/imported/pk.yaml[m
+        [32mnew file:   data/sources/imported/pl.yaml[m
+        [32mnew file:   data/sources/imported/pr.yaml[m
+        [32mnew file:   data/sources/imported/ps.yaml[m
+        [32mnew file:   data/sources/imported/pt.yaml[m
+        [32mnew file:   data/sources/imported/py.yaml[m
+        [32mnew file:   data/sources/imported/qa.yaml[m
+        [32mnew file:   data/sources/imported/re.yaml[m
+        [32mnew file:   data/sources/imported/ro.yaml[m
+        [32mnew file:   data/sources/imported/rs.yaml[m
+        [32mnew file:   data/sources/imported/ru.yaml[m
+        [32mnew file:   data/sources/imported/rw.yaml[m
+        [32mnew file:   data/sources/imported/sa.yaml[m
+        [32mnew file:   data/sources/imported/sc.yaml[m
+        [32mnew file:   data/sources/imported/sd.yaml[m
+        [32mnew file:   data/sources/imported/se.yaml[m
+        [32mnew file:   data/sources/imported/sg.yaml[m
+        [32mnew file:   data/sources/imported/si.yaml[m
+        [32mnew file:   data/sources/imported/sk.yaml[m
+        [32mnew file:   data/sources/imported/sl.yaml[m
+        [32mnew file:   data/sources/imported/sm.yaml[m
+        [32mnew file:   data/sources/imported/sn.yaml[m
+        [32mnew file:   data/sources/imported/so.yaml[m
+        [32mnew file:   data/sources/imported/sr.yaml[m
+        [32mnew file:   data/sources/imported/ss.yaml[m
+        [32mnew file:   data/sources/imported/sv.yaml[m
+        [32mnew file:   data/sources/imported/sy.yaml[m
+        [32mnew file:   data/sources/imported/sz.yaml[m
+        [32mnew file:   data/sources/imported/tc.yaml[m
+        [32mnew file:   data/sources/imported/td.yaml[m
+        [32mnew file:   data/sources/imported/tg.yaml[m
+        [32mnew file:   data/sources/imported/th.yaml[m
+        [32mnew file:   data/sources/imported/tj.yaml[m
+        [32mnew file:   data/sources/imported/tm.yaml[m
+        [32mnew file:   data/sources/imported/tn.yaml[m
+        [32mnew file:   data/sources/imported/tr.yaml[m
+        [32mnew file:   data/sources/imported/tt.yaml[m
+        [32mnew file:   data/sources/imported/tw.yaml[m
+        [32mnew file:   data/sources/imported/tz.yaml[m
+        [32mnew file:   data/sources/imported/ua.yaml[m
+        [32mnew file:   data/sources/imported/ug.yaml[m
+        [32mnew file:   data/sources/imported/us.yaml[m
+        [32mnew file:   data/sources/imported/uy.yaml[m
+        [32mnew file:   data/sources/imported/uz.yaml[m
+        [32mnew file:   data/sources/imported/va.yaml[m
+        [32mnew file:   data/sources/imported/vc.yaml[m
+        [32mnew file:   data/sources/imported/ve.yaml[m
+        [32mnew file:   data/sources/imported/vg.yaml[m
+        [32mnew file:   data/sources/imported/vn.yaml[m
+        [32mnew file:   data/sources/imported/ws.yaml[m
+        [32mnew file:   data/sources/imported/xk.yaml[m
+        [32mnew file:   data/sources/imported/ye.yaml[m
+        [32mnew file:   data/sources/imported/za.yaml[m
+        [32mnew file:   data/sources/imported/zm.yaml[m
+        [32mnew file:   data/sources/imported/zw.yaml[m
+        [32mdeleted:    data/universities.source.yaml[m
+        [32mmodified:   dist/universities.canonical.json[m
+        [32mmodified:   pyproject.toml[m
+        [32mnew file:   src/uni_index/.refact/buddy/briefings/2026-10-08.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/briefings/2026-10-09.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/briefings/2026-10-10.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/briefings/2026-10-11.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/briefings/2026-10-12.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/briefings/2026-10-13.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/briefings/2026-10-14.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/briefings/2026-10-15.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/briefings/2026-10-16.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/briefings/2026-10-17.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/briefings/2026-10-18.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/briefings/2026-10-19.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/briefings/2026-10-20.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/briefings/2026-10-21.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/chats/workflows/buddy_architecture_drift_watcher.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/chats/workflows/buddy_daily_digest.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/chats/workflows/buddy_dependency_radar.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/chats/workflows/buddy_docs_gardener.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/chats/workflows/buddy_friday_retro.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/chats/workflows/buddy_idle_suggester.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/chats/workflows/buddy_memory_gardener.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/chats/workflows/buddy_pr_issue_matchmaker.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/chats/workflows/buddy_refactor_hunter.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/chats/workflows/buddy_setup_coach.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/drafts.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/main_prompt.md[m
+        [32mnew file:   src/uni_index/.refact/buddy/memory_ops.jsonl[m
+        [32mnew file:   src/uni_index/.refact/buddy/memory_ops.jsonl.lock[m
+        [32mnew file:   src/uni_index/.refact/buddy/runtime_queue.jsonl[m
+        [32mnew file:   src/uni_index/.refact/buddy/settings.json[m
+        [32mnew file:   src/uni_index/.refact/buddy/state.json[m
+        [32mnew file:   src/uni_index/.refact/knowledge/2026-09-29_154132_1adece95_git-hotspot-datasourceshipoimportyaml.md[m
+        [32mnew file:   src/uni_index/.refact/knowledge/2026-09-29_154132_651edb0d_git-hotspot-srcuniindexclipy.md[m
+        [32mnew file:   src/uni_index/.refact/knowledge/2026-09-29_154132_7e1d081d_git-hotspot-readmemd.md[m
+        [32mnew file:   src/uni_index/.refact/knowledge/2026-09-29_154132_f0695863_git-hotspot-teststestnormalizepy.md[m
+        [32mnew file:   src/uni_index/.refact/knowledge/2026-09-29_154132_f63ee2aa_git-hotspot-srcuniindeximporthipopy.md[m
+        [32mnew file:   src/uni_index/.refact/knowledge/2026-10-09_165230_1603560c_git-hotspot-teststestimporthipopy.md[m
+        [32mnew file:   src/uni_index/.refact/project_information.yaml[m
+        [32mnew file:   src/uni_index/.refact/tasks/index.json[m
+        [32mmodified:   src/uni_index/cli.py[m
+        [32mmodified:   src/uni_index/import_hipo.py[m
+        [32mmodified:   src/uni_index/io_utils.py[m
+        [32mmodified:   src/uni_index/normalize.py[m
+        [32mnew file:   tests/session_log.txt[m
+        [32mnew file:   tests/test_layers.py[m
+
+Untracked files:
+  (use "git add <file>..." to include in what will be committed)
+        [31m.Rhistory[m
+        [31mfetcher.py[m
+
+[1m[7m%[27m[1m[0m                                                                                                                                         [0m[27m[24m[Jjash@MacBook-Pro-2 university-crawl-index % [K[?2004hgit statusadd data/ src/ tests/ README.md pyproject.toml .github/[45Ddist/ src/ tests/ README.md pyproject.toml .github/

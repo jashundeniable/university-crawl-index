@@ -1,0 +1,11 @@
+# CURATED - hand-edited. Overrides data/sources/imported/ field by field, matched by domain.
+# To override an imported entry: its exact domain plus only the fields you want changed.
+# Fields: domain, country (2-letter), type (public|private|community|research|other),
+#         priority (1 = crawl first .. 5 = crawl last), subdomains (list).
+universities:
+- domain: ox.ac.uk
+  country: GB
+  type: public
+  priority: 1
+  subdomains:
+  - admissions.ox.ac.uk

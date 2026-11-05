@@ -16,19 +16,21 @@ jobs:
         with:
           python-version: "3.12"
 
-      - name: Install package
-        run: pip install -e .
+      - name: Install package with dev tools
+        run: pip install -e ".[dev]"
 
+      # pytest collects both unittest-style classes and plain test_ functions;
+      # `unittest discover` silently skipped the latter
       - name: Run tests
-        run: python -m unittest discover -s tests -v
+        run: python -m pytest -v
 
-      - name: Regenerate canonical file from source
-        run: uni-index normalize data/universities.source.yaml --out dist/universities.canonical.json
+      - name: Regenerate canonical file from the layered sources
+        run: uni-index normalize data/sources/imported data/sources/curated --out dist/universities.canonical.json
 
       - name: Fail if canonical file is out of date
         run: |
           git diff --exit-code -- dist/universities.canonical.json || (
             echo "::error::dist/universities.canonical.json is out of date." \
-                 "Run 'uni-index normalize data/universities.source.yaml' locally and commit the result." \
+                 "Run 'uni-index normalize' locally and commit the result." \
             && exit 1
           )
