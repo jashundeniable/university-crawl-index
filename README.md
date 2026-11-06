@@ -1,22 +1,25 @@
 # University Crawl Index
 
-A small CLI that turns a human-edited list of target universities into:
+A small CLI that turns lists of target universities into:
 
 1. A **canonical, versioned JSON file** (`dist/universities.canonical.json`) — validated,
-   deduped, deterministically sorted. This is committed to git and is the stable
-   source of truth every crawl run reads from.
+   deduped, deterministically sorted. Committed to git; the stable source of truth every
+   crawl run starts from.
 2. A **SQL "master index"** (SQLite, one file: `uni_index.db`) that dedupes universities
    by domain and tracks crawl status over time.
 
 ## How it fits together
 
 ```
-data/universities.source.yaml   <- you edit this (human-friendly list, CSV also supported)
+data/sources/imported/<cc>.yaml   <- generated from the Hipo dataset (uni-index import-hipo)
+                                     never hand-edited; regenerate instead
+data/sources/curated/<cc>.yaml    <- you edit these: override imported entries field by
+                                     field (matched by domain), or add new ones
         │
-        │  uni-index normalize
+        │  uni-index normalize   (imported first, curated second: the later layer wins)
         ▼
 dist/universities.canonical.json  <- generated: validated, deduped, sorted — commit this
-        │        (a GitHub Action fails the build if you forget to regenerate it)
+        │        (CI fails the build if it's out of date)
         │
         │  uni-index sync-db
         ▼
@@ -28,79 +31,72 @@ uni_index.db (SQLite)  ->  table "universities": domain (unique), country, type,
    your crawler (a separate program — reads 'pending' rows, crawls them, reports back)
 ```
 
+One file per 2-letter country code (`us.yaml`, `gb.yaml`, `in.yaml`, ...): small files mean
+collaborators rarely touch the same lines, and each file can be given its own reviewers.
+`data/reports/hipo_import.yaml` lists every entry the importer skipped, and why.
+
 ## 1. One-time setup
 
 ```bash
-# 1. Clone your repo and open a terminal in it
 git clone <your-repo-url>
 cd <your-repo-folder>
-
-# 2. Create an isolated Python environment (keeps this project's packages separate
-#    from anything else on your machine)
 python3 -m venv .venv
-source .venv/bin/activate        # on Windows (PowerShell): .venv\Scripts\Activate.ps1
-
-# 3. Install this project + its two dependencies (Click for the CLI, PyYAML for parsing)
-pip install -e .
+.venv/bin/python -m pip install -e ".[dev]"     # the package, plus pytest
 ```
 
-You only need to redo step 3 when dependencies change. Steps 1-2 are one-time per machine.
-Each time you come back to work on this, you just need `source .venv/bin/activate` again.
+Run commands through `.venv/bin/...` (or activate the venv first). A venv records absolute
+paths: if you rename or move the project folder, rebuild the venv.
 
 ## 2. Day-to-day usage
 
-Edit `data/universities.source.yaml` (add/update universities), then:
-
 ```bash
-# Turn the source file into the canonical, versioned JSON
-uni-index normalize data/universities.source.yaml
-
-# Load the canonical file into the SQL master index (dedupes + tracks crawl status)
-uni-index sync-db
-
-# See a quick status summary
-uni-index status
+uni-index normalize   # merge imported + curated -> dist/universities.canonical.json
+uni-index sync-db     # load the canonical file into the SQL master index
+uni-index status      # crawl-status summary
 ```
 
-Commit **both** your source-file edit **and** the regenerated
-`dist/universities.canonical.json` in the same PR/commit. `.github/workflows/validate.yml`
-will fail CI if you forget to regenerate it, so the canonical file can never silently
-drift out of sync with the source — this is what makes it trustworthy as a "source of truth"
-once you have more than one person contributing.
+Commit your `data/sources/curated/` edit **and** the regenerated canonical file together.
 
-## 3. Adding a university
+## 3. Adding or changing a university
 
-Open `data/universities.source.yaml` and add an entry:
+Edit `data/sources/curated/<cc>.yaml` (create it if that country has no file yet — copy the
+header from an existing curated file).
+
+Override an imported entry: its exact domain, plus only the fields you want changed.
+
+```yaml
+universities:
+  - domain: mit.edu
+    type: private
+    priority: 1
+    subdomains: [admissions.mit.edu, catalog.mit.edu]
+```
+
+Add a new one: every required field.
 
 ```yaml
   - domain: example.edu
-    country: US        # 2-letter code
-    type: public        # public | private | community | research | other
-    priority: 2          # 1 (crawl first) .. 5 (crawl last), default 3
-    subdomains:
-      - admissions.example.edu
+    country: US        # 2-letter code (required)
+    type: public       # public | private | community | research | other  (default: other)
+    priority: 2        # 1 (crawl first) .. 5 (crawl last)                   (default: 3)
+    subdomains: []
 ```
 
-CSV works too, with the same column names (`subdomains` separated by `|`, `;`, or `,`):
+Empty values never override. `normalize` reports how many overrides and new entries the
+curated layer applied: a "new entry" where you meant an override means the domain doesn't
+match the imported one exactly.
 
-```csv
-domain,country,type,priority,subdomains
-example.edu,US,public,2,admissions.example.edu|apply.example.edu
+## 4. Refreshing the imported layer
+
+```bash
+curl -f -o world_universities.json https://raw.githubusercontent.com/Hipo/university-domains-list/master/world_universities_and_domains.json
+uni-index import-hipo world_universities.json
 ```
 
-Then run `uni-index normalize <your file>`, check the messages, commit.
+This regenerates `data/sources/imported/` from scratch and rewrites the report. Curated edits
+are untouched. Read the report, run `normalize`, commit.
 
-Invalid rows are **skipped, not silently accepted** — you'll see exactly what's wrong:
-
-```
-$ uni-index normalize data/universities.source.yaml
-2 row(s) skipped due to errors:
-  - Row 3 (fake-school): domain 'fake school' doesn't look like a valid domain (e.g. 'mit.edu')
-  - Row 5 (mit.edu): subdomain 'admissions.harvard.edu' must end with the university domain 'mit.edu'
-Wrote 4 canonical record(s) to dist/universities.canonical.json
-```
-
-## 4. Reporting crawl results back (for whatever crawls the list)
+## 5. Reporting crawl results back (for whatever crawls the list)
 
 ```bash
 uni-index mark mit.edu --status in_progress
@@ -112,16 +108,13 @@ Re-running `sync-db` later **won't** reset a domain's status back to `pending` u
 that domain's canonical record actually changed (detected via a content hash) — so your
 crawl progress is safe across re-syncs.
 
-## 5. Running the tests
+## 6. Running the tests
 
 ```bash
-python -m unittest discover -s tests -v
+.venv/bin/python -m pytest
 ```
 
-No extra install needed — the tests use only the standard library. (If you'd rather use
-`pytest`, `pip install pytest` and just run `pytest` — it can run these same files as-is.)
-
-## 6. Growing beyond SQLite
+## 7. Growing beyond SQLite
 
 SQLite (a single file, `uni_index.db`) is deliberately the starting point: free, zero
 setup, extremely reliable, and completely sufficient for a small team pointed at one
@@ -139,28 +132,23 @@ That's roughly when you're moving from "15-30 people sharing files over GitHub" 
   a `psycopg`/`psycopg2` connection instead of `sqlite3`, adjust the `?` placeholders in
   the SQL strings to `%s`, and the rest of the codebase (CLI, normalize, tests) doesn't
   need to change, because nothing outside `db.py` knows or cares which database it is.
-  (If the schema grows a lot more complex at that point, this is also a natural moment
-  to introduce an ORM like SQLAlchemy — not needed for a "simple table," genuinely
-  useful once you have several related tables.)
 - Put a thin read API (e.g. FastAPI) in front of that Postgres instance if you want
   people/services to query status without installing this CLI at all.
 
-The `dist/universities.canonical.json` file and the git workflow around it don't change
-at any point in this growth path — that part scales to any number of contributors as-is,
-because it's just files in a repo with a CI check.
+The canonical file and the git workflow around it don't change at any point in this
+growth path — files in a repo with a CI check scale to any number of contributors.
 
 ## Design notes (why these choices)
 
-- **Only two dependencies** (`click`, `PyYAML`), everything else is Python's standard
-  library (`sqlite3`, `dataclasses`, `unittest`, `hashlib`, `json`). Fewer dependencies
-  means fewer things that can break, need upgrading, or cost money — directly in service
-  of "cheap, stable, reliable."
-- **The canonical JSON is a build artifact, not hand-edited.** Humans edit
-  `data/universities.source.yaml`; the CLI regenerates the canonical file deterministically
-  (sorted keys, sorted rows, no timestamps) so diffs in PRs are small and meaningful.
+- **Two runtime dependencies** (`click`, `PyYAML`); everything else is the standard library.
+  Fewer dependencies, fewer things that break, need upgrading, or cost money. pytest is a
+  dev-only extra.
+- **Two source layers.** `imported/` is what an external dataset says; `curated/` is what a
+  person decided. Keeping them apart means refreshing the import never clobbers a hand edit.
+- **Generated files are deterministic** (sorted rows, sorted keys, no timestamps, no
+  absolute paths), so re-running a generator on unchanged input produces no git diff.
+- **External mess is quarantined at the boundary.** The importer validates with the same
+  rules as `normalize` and reports what it skipped, so CI fails only for human errors.
 - **The SQL table is operational state, not source data** — it's git-ignored on purpose.
-  Crawl status changes constantly and shouldn't live in version control; the canonical
-  file is what's versioned.
-- **A content hash (`source_hash`) per record** means re-running `sync-db` is safe and
-  idempotent: unchanged universities are left completely alone (including their crawl
-  status), so nothing gets accidentally reset to `pending` just because you re-ran a command.
+- **A content hash (`source_hash`) per record** makes `sync-db` idempotent: unchanged
+  universities keep their crawl status across re-syncs.

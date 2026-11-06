@@ -1,0 +1,10 @@
+# CURATED - hand-edited. Overrides data/sources/imported/ field by field, matched by domain.
+# To override an imported entry: its exact domain plus only the fields you want changed.
+# Fields: domain, country (2-letter), type (public|private|community|research|other),
+#         priority (1 = crawl first .. 5 = crawl last), subdomains (list).
+universities:
+- domain: utoronto.ca
+  country: CA
+  type: public
+  priority: 2
+  subdomains: []
