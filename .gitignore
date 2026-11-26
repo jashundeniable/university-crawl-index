@@ -5,8 +5,12 @@ __pycache__/
 build/
 uni_index.db
 .pytest_cache/
-dist/
+dist/*
 src/.refact/
 tests/.refact/
 world_universities.json
 data/sources/hipo_import.yamlsrc/uni_index/.refact/
+
+!dist/universities.canonical.json
+.refact/
+.Rhistory
